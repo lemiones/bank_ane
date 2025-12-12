@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+	<item id="Time"><![CDATA[2015-02-07 16:15]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[社區銀行]]></item>
+			<item id="identifier"><![CDATA[bank_ane]]></item>
+			<item id="description"><![CDATA[社區銀行，用于實現銀行的功能。]]></item>
+			<item id="datatables"><![CDATA[banklist,bankoperation,banklog]]></item>
+			<item id="directory"><![CDATA[bank_ane/]]></item>
+			<item id="copyright"><![CDATA[王者社區 & wz2006.com]]></item>
+			<item id="version"><![CDATA[2.8]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[bank]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[社區銀行]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[社區銀行]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[現金擴展積分項]]></item>
+				<item id="description"><![CDATA[選擇你需要設定為現金的擴展積分項]]></item>
+				<item id="variable"><![CDATA[moneycredits]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[extcredits2]]></item>
+				<item id="extra"><![CDATA[extcredits1
+extcredits2
+extcredits3
+extcredits4
+extcredits5
+extcredits6
+extcredits7
+extcredits8]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[存款擴展積分項]]></item>
+				<item id="description"><![CDATA[選擇你需要設定為存款的擴展積分項，設定該項僅為顯示用戶存款數目，請不要將該字段用于除顯示外的其他任何操作！設定“none”即不開啟該功能，用戶的存款為隱私。]]></item>
+				<item id="variable"><![CDATA[depositcredits]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[none]]></item>
+				<item id="extra"><![CDATA[none
+extcredits1
+extcredits2
+extcredits3
+extcredits4
+extcredits5
+extcredits6
+extcredits7
+extcredits8]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[啟用單銀行模式的銀行編號]]></item>
+				<item id="description"><![CDATA[用于設定將多銀行系統改造為單銀行系統使用，填入“0”為啟用多銀行系統，填入任何一個銀行的編號即啟用單銀行模式，會員進入銀行將不顯示銀行列表，但銀行行長訪問仍會出現列表。]]></item>
+				<item id="variable"><![CDATA[onlybankid]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[是否關閉銀行]]></item>
+				<item id="description"><![CDATA[如果關閉銀行則會員不能夠進入，但是不影響管理員使用]]></item>
+				<item id="variable"><![CDATA[close]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[關閉銀行消息提示]]></item>
+				<item id="description"><![CDATA[如果關閉銀行，則顯示給會員此信息]]></item>
+				<item id="variable"><![CDATA[closemessage]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[金融業整頓中，請返回稍後再來。]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[銀行首頁公告]]></item>
+				<item id="description"><![CDATA[可以用于說明銀行情況，也可以用于為某個銀行打廣告，支持HTML代碼]]></item>
+				<item id="variable"><![CDATA[notice]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[新社區銀行上線，會員可以自己開設銀行，需要開設銀行的會員請聯系中央銀行行長。]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[中央銀行行長]]></item>
+				<item id="description"><![CDATA[多用戶請用半角“,”隔開，區分大小寫]]></item>
+				<item id="variable"><![CDATA[bankadmin]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[管理員是否為中央銀行行長]]></item>
+				<item id="description"><![CDATA[是否將管理員默認設置為中央銀行行長]]></item>
+				<item id="variable"><![CDATA[adminisbankadm]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[活期存儲保底利息]]></item>
+				<item id="description"><![CDATA[中央銀行為用戶自開銀行的保底支付活期利息，超過該利息的部分由私有銀行自己負擔。]]></item>
+				<item id="variable"><![CDATA[currentaccrual]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0.0001]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[定期存儲保底利息]]></item>
+				<item id="description"><![CDATA[中央銀行為用戶自開銀行的保底支付定期利息，超過該利息的部分由私有銀行自己負擔。]]></item>
+				<item id="variable"><![CDATA[fixedaccrual]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0.0005]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[欠貸短消息通知人員]]></item>
+				<item id="description"><![CDATA[必須是中央銀行行長，但只給予這里填寫的用戶發送處理貸款的短消息通知。不填寫將無人知道欠貸的消息！]]></item>
+				<item id="variable"><![CDATA[lenmsgto]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[積分交易設定]]></item>
+				<item id="description"><![CDATA[用于設定各種積分與金錢之間的任意轉換。一行為一種積分交易設定，格式為“積分字段,賣出價格,買入價格”，例如“extcredits1,10,20”表示extcredits1用金錢賣出是10元，買入是20元。多個積分交易就設定多行，不設定的字段不參與交易，現金和存款字段設定無效。]]></item>
+				<item id="variable"><![CDATA[buycredits]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[extcredits1,10,20
+extcredits2,0,0
+extcredits3,0,0
+extcredits4,0,0
+extcredits5,0,0
+extcredits6,0,0
+extcredits7,0,0
+extcredits8,0,0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="accounts_close"><![CDATA[您的帳號已被銀行凍結，請聯系銀行行長處理。]]></item>
+				<item id="accounts_toclose"><![CDATA[對方銀行帳號已被凍結，不能進行該操作。]]></item>
+				<item id="action_success"><![CDATA[恭喜您，操作成功\。]]></item>
+				<item id="bankset_success"><![CDATA[銀行參數修改成功\，現將跳轉到管理首頁。]]></item>
+				<item id="bankname_error"><![CDATA[銀行名稱錯誤，請返回重新填寫。]]></item>
+				<item id="banknum_error"><![CDATA[金額數目有誤，請返回。]]></item>
+				<item id="banklogo_error"><![CDATA[銀行LOGO標志地址錯誤，請返回重新填寫。]]></item>
+				<item id="bankrate_error"><![CDATA[銀行利率設置錯誤，所有利率必須是不小于0的數字，請返回重新填寫。]]></item>
+				<item id="bankroll_error"><![CDATA[銀行資本不足暫時停止該業務，即將融資或者破產中，請返回。]]></item>
+				<item id="buy_close"><![CDATA[銀行暫時不允許\積分買賣，請返回。]]></item>
+				<item id="buynum_close"><![CDATA[積分數量有誤，請返回。]]></item>
+				<item id="config_error"><![CDATA[銀行參數設置錯誤，請通知管理員設定。]]></item>
+				<item id="configexc_error"><![CDATA[未開啟現金擴展積分項積分，請通知管理員設定]]></item>
+				<item id="creator_error"><![CDATA[銀行創始人設定錯誤，請返回修改。]]></item>
+				<item id="creatormoney_error"><![CDATA[銀行創始人的資金不足以支付開設銀行和投資的費用，請返回。]]></item>
+				<item id="clear_error"><![CDATA[您在本行擁有除活期以外的業務，暫時不能消戶，請返回。]]></item>
+				<item id="fixdaynum_error"><![CDATA[定期存款的天數不得小于30天，請返回。]]></item>
+				<item id="lendaynum_error"><![CDATA[貸款天數錯誤，請返回。]]></item>
+				<item id="lofok_error"><![CDATA[對方存款和現金不足以支付貸款及其利息總額，請返回使用報告功\能讓中央行長給予處理。]]></item>
+				<item id="lofup_error"><![CDATA[系統沒有設置報告對象，請返回直接聯系中央行長處理。]]></item>
+				<item id="logdel_error"><![CDATA[日志刪除天數錯誤，只能清理30天及其以前的記錄，請返回。]]></item>
+				<item id="loginpass_error"><![CDATA[您的論壇帳號登錄密碼錯誤，請返回。]]></item>
+				<item id="moneynum_error"><![CDATA[您的現金不足以進行該操作，請返回。]]></item>
+				<item id="no_open"><![CDATA[您還沒有在本銀行開戶，請返回開戶後再操作。]]></item>
+				<item id="no_openbank"><![CDATA[您還沒在任何銀行開戶，沒有您的賬戶記錄，請返回。]]></item>
+				<item id="open_success"><![CDATA[恭喜您開戶成功\，您可以進行相關業務操作了。]]></item>
+				<item id="pass_error"><![CDATA[銀行密碼錯誤，請返回修改。]]></item>
+				<item id="pass_twoerror"><![CDATA[兩次銀行密碼輸入不一致，請返回。]]></item>
+				<item id="selectbank_error"><![CDATA[請選擇一個銀行進行操作，請返回。]]></item>
+				<item id="user_error"><![CDATA[用戶名輸入錯誤或者不存在該用戶，請返回。]]></item>
+				<item id="var_error"><![CDATA[參數傳遞錯誤，請返回。]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="bank"><![CDATA[社區銀行]]></item>
+				<item id="memcp_info"><![CDATA[賬戶信息]]></item>
+				<item id="username"><![CDATA[用戶名]]></item>
+				<item id="usergroup"><![CDATA[用戶組]]></item>
+				<item id="password_confirm"><![CDATA[密碼確認]]></item>
+				<item id="keyword"><![CDATA[關鍵字]]></item>
+				<item id="yes"><![CDATA[是]]></item>
+				<item id="no"><![CDATA[否]]></item>
+				<item id="admin_menu"><![CDATA[管理操作菜單]]></item>
+				<item id="admin_menu_accounts"><![CDATA[帳號管理]]></item>
+				<item id="admin_menu_lendok"><![CDATA[貸款審批]]></item>
+				<item id="admin_menu_lendoff"><![CDATA[欠貸處理]]></item>
+				<item id="admin_menu_financing"><![CDATA[銀行投資]]></item>
+				<item id="admin_menu_varset"><![CDATA[參數設置]]></item>
+				<item id="admin_menu_log"><![CDATA[銀行日志]]></item>
+				<item id="admin_welcome"><![CDATA[歡迎進入銀行管理。<br /><br />請注意︰銀行管理中的各項操作都將影響到銀行的發展，請謹慎操作。中央銀行可能為該銀行提供了活期和定期的保底利息，也就是說為用戶支付的存款利息中中央銀行對一定的比率買單，超出比率的部分由銀行自己負責。所有開戶費用、轉帳手續費用以及貸款利息所得歸銀行所有。銀行行長可以為銀行投資，當銀行自己的資金（不包括存款資金）不能運營整個銀行時將對銀行進行破產處理，相關銀行責任人將會受到相應的處理。<br /><br />小提示︰修改銀行參數中，修改活期利率將立即生效，修改定期以及貸款利率將只影響修改以後的定期存款和貸款，修改前的定期和貸款將依舊按照業務辦理時的利率計算。]]></item>
+				<item id="action_sel"><![CDATA[選擇操作]]></item>
+				<item id="bank_copyright"><![CDATA[版權信息]]></item>
+				<item id="bank_enter"><![CDATA[進入銀行]]></item>
+				<item id="bank_isclose"><![CDATA[關閉中]]></item>
+				<item id="bank_isopen"><![CDATA[已開戶]]></item>
+				<item id="bank_info"><![CDATA[銀行簡介]]></item>
+				<item id="bank_info_msg"><![CDATA[銀行設置中，即將營業，敬請期待……]]></item>
+				<item id="bank_info_addinfo"><![CDATA[注意︰新創建的銀行默認為關閉狀態，所有利息設定按默認設置，需銀行創始人修改參數後才能正常營業，系統會自動發消息告知銀行創始人進行相關操作。]]></item>
+				<item id="bank_info_creator"><![CDATA[銀行創始人]]></item>
+				<item id="bank_info_creator_msg"><![CDATA[請輸入創始人的論壇帳號。]]></item>
+				<item id="bank_info_admin"><![CDATA[銀行行長]]></item>
+				<item id="bank_info_admin_msg"><![CDATA[設定銀行行長，銀行創始人默認為銀行行長，多個銀行行長用半角“,”隔開。]]></item>
+				<item id="bank_info_name"><![CDATA[銀行名稱]]></item>
+				<item id="bank_info_name_msg"><![CDATA[銀行的名字，為了銀行的信譽請設定後不要再修改。]]></item>
+				<item id="bank_info_logo"><![CDATA[銀行標志]]></item>
+				<item id="bank_info_logo_msg"><![CDATA[銀行LOGO地址，沒有請不填，標準大小120×50。]]></item>
+				<item id="bank_info_poundage"><![CDATA[開設銀行花費]]></item>
+				<item id="bank_info_poundage_msg"><![CDATA[開設銀行的手續費用，從銀行創始人中扣除，不需費用請填0。]]></item>
+				<item id="bank_info_time"><![CDATA[創建時間]]></item>
+				<item id="bank_info_allmoney"><![CDATA[銀行資產]]></item>
+				<item id="bank_info_investment"><![CDATA[投資總額]]></item>
+				<item id="bank_info_investment_msg"><![CDATA[請輸入銀行初始投資金額，該金額從銀行創始人現金中扣除並轉存到銀行的資產中。]]></item>
+				<item id="bank_info_bankroll"><![CDATA[實際資本]]></item>
+				<item id="bank_info_deposit"><![CDATA[銀行存款]]></item>
+				<item id="bank_info_usernum"><![CDATA[用戶數量]]></item>
+				<item id="bank_info_notice"><![CDATA[銀行公告]]></item>
+				<item id="bank_info_notice_msg"><![CDATA[用于公示最新銀行信息，當銀行關閉時將作為關閉提示信息。用于公告時支持代碼格式。]]></item>
+				<item id="bank_info_opintro"><![CDATA[業務介紹]]></item>
+				<item id="bank_info_open"><![CDATA[費用]]></item>
+				<item id="bank_info_open_msg"><![CDATA[銀行開戶費用，類型為整數，不需要開戶費請填0。]]></item>
+				<item id="bank_info_curacc"><![CDATA[活期利率]]></item>
+				<item id="bank_info_curacc_msg"><![CDATA[可分級設定銀行利率，每行表示一個設定，每行的格式為“金額,利率”表示該金額及其以上的利率為該利率。例如“0,0.0001”表示0元及其以上的利率為0.1　，可以設定多行用于控制按金額大小使用不同的利率。]]></item>
+				<item id="bank_info_fixacc"><![CDATA[定期利率]]></item>
+				<item id="bank_info_fixacc_msg"><![CDATA[定期利率設定，比如“0.0005”表示0.5　，注意︰定期利率的修改不影響已經存入的定期，修改前的定期按用戶存入時的利率計算。]]></item>
+				<item id="bank_info_lenacc"><![CDATA[貸款利率]]></item>
+				<item id="bank_info_lenacc_msg"><![CDATA[貸款利率設定，比如“0.001”表示1　，注意︰貸款利率的修改不影響已存在的貸款，修改前的貸款依舊按照用戶貸款時的利率計算。]]></item>
+				<item id="bank_info_chgacc"><![CDATA[轉帳手續費率]]></item>
+				<item id="bank_info_chgacc_msg"><![CDATA[轉帳收的手續費比率，比如“0.001”表示1　。]]></item>
+				<item id="bank_info_isclose"><![CDATA[是否關閉銀行]]></item>
+				<item id="bank_info_isclose_msg"><![CDATA[關閉銀行後只有銀行行長可以訪問。]]></item>
+				<item id="bank_info_loginpass_msg"><![CDATA[該操作需要您輸入論壇帳號的登錄密碼。]]></item>
+				<item id="bank_welcome"><![CDATA[歡迎來到]]></item>
+				<item id="bank_list"><![CDATA[銀行列表]]></item>
+				<item id="bank_left_menu"><![CDATA[操作菜單]]></item>
+				<item id="bank_left_menu_show"><![CDATA[我的賬戶]]></item>
+				<item id="bank_left_menu_buy"><![CDATA[積分買賣]]></item>
+				<item id="bank_left_menu_buylog"><![CDATA[積分買賣記錄]]></item>
+				<item id="bank_left_menu_list"><![CDATA[財富排行]]></item>
+				<item id="bank_menu_home"><![CDATA[營業大廳]]></item>
+				<item id="bank_menu_cur"><![CDATA[活期儲蓄]]></item>
+				<item id="bank_menu_fix"><![CDATA[定期儲蓄]]></item>
+				<item id="bank_menu_chg"><![CDATA[賬戶匯款]]></item>
+				<item id="bank_menu_lend"><![CDATA[貸款專櫃]]></item>
+				<item id="bank_menu_pass"><![CDATA[賬戶管理]]></item>
+				<item id="bank_menu_log"><![CDATA[理財日志]]></item>
+				<item id="bank_menu_log_my"><![CDATA[我的操作日志]]></item>
+				<item id="bank_menu_log_tome"><![CDATA[我接收的日志]]></item>
+				<item id="bank_menu_adm"><![CDATA[銀行管理]]></item>
+				<item id="buy_buy"><![CDATA[買入]]></item>
+				<item id="buy_buyprice"><![CDATA[買入價格]]></item>
+				<item id="buy_buyclose"><![CDATA[不允許\買入]]></item>
+				<item id="buy_sell"><![CDATA[賣出]]></item>
+				<item id="buy_sellprice"><![CDATA[賣出價格]]></item>
+				<item id="buy_sellclose"><![CDATA[不允許\賣出]]></item>
+				<item id="buy_choice"><![CDATA[買賣的積分類型]]></item>
+				<item id="buy_showinfo"><![CDATA[歡迎使用積分買賣功\能，當前單個買賣價格如下︰]]></item>
+				<item id="buy_showmy"><![CDATA[當前您有]]></item>
+				<item id="buy_notice"><![CDATA[1、積分買賣是現金交易，與存款無關。<br />2、積分買賣價格會因設定而變化，請把握時機。]]></item>
+				<item id="chg_myshow"><![CDATA[當前匯款手續費率為{$bankinfo[changetaxshow]}　，歡迎使用本行匯款業務。]]></item>
+				<item id="chg_taxcheck"><![CDATA[費用計算]]></item>
+				<item id="chg_taxinfo"><![CDATA[當前金額的手續費用為︰]]></item>
+				<item id="chg_notice"><![CDATA[1、匯款金額和手續費從您的現金中扣除。<br />2、對方需在本行開戶您才能給其匯款。<br />3、匯款金額不能少于10。]]></item>
+				<item id="confirm_msg"><![CDATA[您確認進行該操作嗎？]]></item>
+				<item id="cur_myshow"><![CDATA[您當前的存款金額為 {$mybankinfo[opnum]} {$moneyname}，活期利率為{$mycurrateshow}，計息時間從{$mybankinfo[curtimeshow]}開始。]]></item>
+				<item id="cur_in"><![CDATA[存款]]></item>
+				<item id="cur_out"><![CDATA[取款]]></item>
+				<item id="cur_accrual"><![CDATA[您當前可得利息]]></item>
+				<item id="cur_accrualok"><![CDATA[手動結息]]></item>
+				<item id="cur_notice"><![CDATA[1、活期利率可能是按您存款多少而定，請注意銀行設定。<br />2、銀行活期利率會隨銀行設定的改變而改變，利率不是一個穩定值。<br />3、存取款操作時將自動結算利息。<br />4、想擁有穩定的利率推薦使用定期儲蓄。]]></item>
+				<item id="daybefore"><![CDATA[天以前的記錄]]></item>
+				<item id="daynum"><![CDATA[操作天數]]></item>
+				<item id="deladminlog"><![CDATA[包括管理記錄]]></item>
+				<item id="douer_changes1"><![CDATA[凍結銀行賬戶]]></item>
+				<item id="douer_changes2"><![CDATA[解凍銀行賬戶]]></item>
+				<item id="douer_password"><![CDATA[重置銀行密碼]]></item>
+				<item id="douer_viewlog"><![CDATA[用戶相關操作記錄]]></item>
+				<item id="douer_tocur"><![CDATA[支取到活期]]></item>
+				<item id="fin_give"><![CDATA[我要投資銀行]]></item>
+				<item id="fin_get"><![CDATA[從銀行資本中提取]]></item>
+				<item id="fin_gettouser"><![CDATA[給會員]]></item>
+				<item id="fix_myshow"><![CDATA[當前定期利率為{$bankinfo[fixedrateshow]}　，歡迎使用定期儲蓄。]]></item>
+				<item id="fix_myfix"><![CDATA[我的定期記錄]]></item>
+				<item id="fix_notice"><![CDATA[1、定期利率以您存入時的利率計算，不受銀行利率的調整影響。<br />2、定期存儲天數不得小于30天。<br />3、提前支取定期將不能獲得利息。<br />4、到期後支取定期利息也僅計算到定期到期之時，定期到期後的時間內沒有任何利息。<br />5、如果您定期未到期但希望使用資金可以使用貸款功\能。]]></item>
+				<item id="fix_out"><![CDATA[支取]]></item>
+				<item id="fix_outform"><![CDATA[您當前準備支取定期的金額為{$fixinfo[opnum]}{$moneyname}，存入時間{$fixinfo[begintimeshow]}，到期時間{$fixinfo[endtimeshow]}，可得利息{$myfixaccrual[all]}{$moneyname}]]></item>
+				<item id="frommoney"><![CDATA[從現金中扣除]]></item>
+				<item id="input_open"><![CDATA[我要開戶]]></item>
+				<item id="input_submit"><![CDATA[提  交]]></item>
+				<item id="len_accrual"><![CDATA[需支付利息]]></item>
+				<item id="len_gb"><![CDATA[還貸]]></item>
+				<item id="len_gu"><![CDATA[取消]]></item>
+				<item id="len_try"><![CDATA[申請貸款]]></item>
+				<item id="len_mylist"><![CDATA[我的貸款情況]]></item>
+				<item id="len_yes"><![CDATA[批準]]></item>
+				<item id="len_no"><![CDATA[駁回]]></item>
+				<item id="len_myshow"><![CDATA[歡迎使用我行貸款業務，當前貸款利率為{$bankinfo[lendingrateshow]}　。]]></item>
+				<item id="len_notice"><![CDATA[1、貸款需要進行審批，申請不一定可以獲得貸款。<br />2、貸款利率以申請時的利率為準，不受銀行後期利率變動影響。<br />3、貸款利息計算從批準時間至還貸時間，還貸越早支付的利息越少。超期部分按雙倍利息計算。<br />4、還貸金額從現金中扣除，請先準備足夠金額到現金中。<br />5、到期不還者銀行有權強行從用戶銀行帳號或者現金中扣除貸款，如果不夠貸款的將給予中央銀行處理，中央銀行將會調整用戶的論壇權限以及擴展積分用于抵押貸款。<br />6、銀行強行還貸如果從存款中扣除，銀行不會為會員支付存款利息，存款利息從支付完貸款後計算，同時對于貸款到期不還的用戶銀行有權強行支取定期而不支付利息。]]></item>
+				<item id="len_outtime"><![CDATA[已超期]]></item>
+				<item id="list_cash"><![CDATA[現金排行榜]]></item>
+				<item id="list_fund"><![CDATA[存款排行榜]]></item>
+				<item id="list_allmoney"><![CDATA[總資產排行榜]]></item>
+				<item id="list_bankmoney"><![CDATA[銀行資產排行榜]]></item>
+				<item id="list_bankpeople"><![CDATA[銀行用戶數排行榜]]></item>
+				<item id="lof_ok"><![CDATA[強扣]]></item>
+				<item id="lof_up"><![CDATA[報告]]></item>
+				<item id="lof_do"><![CDATA[處理]]></item>
+				<item id="lof_do_none"><![CDATA[不返金額給銀行]]></item>
+				<item id="lof_do_only"><![CDATA[將本金返還銀行]]></item>
+				<item id="lof_do_all"><![CDATA[將本金和利息都返還銀行]]></item>
+				<item id="log_addbank"><![CDATA[{$_G[username]}增加了銀行{$var_bankname}，創始人{$var_creator}，支付手續費{$poundage}{$moneyname}，初始投資{$var_investment}{$moneyname}]]></item>
+				<item id="log_accstatus"><![CDATA[{$_G[username]}更改用戶{$buser}的賬戶狀態為{$chgstatus}]]></item>
+				<item id="log_accpass"><![CDATA[{$_G[username]}重置用戶{$buser}的銀行密碼]]></item>
+				<item id="log_acctocur"><![CDATA[{$_G[username]}強行支取用戶{$buser}的定期存款{$banknum}{$moneyname}至其活期賬戶]]></item>
+				<item id="log_buycredits"><![CDATA[{$_G[username]}{$doname}了{$_G[gp_banknum]}{$unit}{$creditname}，相關金額為{$paynum}{$moneyname}]]></item>
+				<item id="log_chgok"><![CDATA[{$_G[username]}匯款給{$touser}金額{$_G[gp_banknum]}{$moneyname}，支付手續費{$mychgaccrual}{$moneyname}(銀行為{$touser}活期結息{$yourcuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_changepass"><![CDATA[{$_G[username]}修改銀行密碼]]></item>
+				<item id="log_chgcreator"><![CDATA[{$_G[username]}將{$bankinfo[bankname]}的創始人由{$bankinfo[creator]}更改為{$newcreator}]]></item>
+				<item id="log_clear"><![CDATA[{$_G[username]}消除銀行賬戶，結算活期存款{$banknum}{$moneyname}]]></item>
+				<item id="log_curin"><![CDATA[{$_G[username]}存入活期{$_G[gp_banknum]}{$moneyname}，總結息{$mycuraccrual[all]}{$moneyname}(銀行結息{$mycuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_curout"><![CDATA[{$_G[username]}取出活期{$_G[gp_banknum]}{$moneyname}，總結息{$mycuraccrual[all]}{$moneyname}(銀行結息{$mycuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_curok"><![CDATA[{$_G[username]}結算活期利息，總結息{$mycuraccrual[all]}{$moneyname}(銀行結息{$mycuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_delbank"><![CDATA[{$_G[username]}刪除銀行，銀行名稱︰{$bankinfo[bankname]}]]></item>
+				<item id="log_dellog"><![CDATA[{$_G[username]}刪除{$_G[gp_dellogday]}天以前的日志]]></item>
+				<item id="log_editbankset"><![CDATA[{$_G[username]}修改銀行參數設置]]></item>
+				<item id="log_fin"><![CDATA[{$_G[username]}為銀行投資{$_G[gp_banknum]}{$moneyname}]]></item>
+				<item id="log_fin_get"><![CDATA[{$_G[username]}從銀行資產中提取{$_G[gp_banknum]}{$moneyname}給會員{$touser}]]></item>
+				<item id="log_fixin"><![CDATA[{$_G[username]}存入定期{$_G[gp_banknum]}{$moneyname}，天數{$_G[gp_daynum]}，利率{$bankinfo[fixedrate]}]]></item>
+				<item id="log_fixout"><![CDATA[{$_G[username]}取出定期{$_G[gp_banknum]}{$moneyname}，總結息{$myfixaccrual[all]}{$moneyname}(銀行結息{$myfixaccrual[bank]}{$moneyname})]]></item>
+				<item id="log_lencheckno"><![CDATA[{$_G[username]}拒絕{$buleninfo[username]}用戶{$banknum}{$moneyname}的貸款申請]]></item>
+				<item id="log_lencheckyes"><![CDATA[{$_G[username]}通過{$buleninfo[username]}用戶{$banknum}{$moneyname}的貸款申請]]></item>
+				<item id="log_lentry"><![CDATA[{$_G[username]}申請貸款{$banknum}{$moneyname}，天數{$daynum}天，利率{$bankinfo[lendingrate]}]]></item>
+				<item id="log_lengiveup"><![CDATA[{$_G[username]}取消申請貸款{$leninfo[opnum]}{$moneyname}，天數{$leninfo[endtime]}天]]></item>
+				<item id="log_lengiveback"><![CDATA[{$_G[username]}歸還貸款{$banknum}{$moneyname}，為銀行支付貸款利息{$mylenaccrual}{$moneyname}]]></item>
+				<item id="log_lenoffok"><![CDATA[{$_G[username]}強扣用戶{$buleninfo[username]}到期未還貸款，本金{$banknum}{$moneyname}+利息{$lenaccnum}{$moneyname}，從活期中扣除{$getcur}{$moneyname}，現金中扣除{$getmom}{$moneyname}]]></item>
+				<item id="log_lenoffup"><![CDATA[{$_G[username]}報告央行要求處理用戶{$buleninfo[username]}貸款{$banknum}{$moneyname}未還]]></item>
+				<item id="log_lenoffdo"><![CDATA[{$_G[username]}處理用戶{$buleninfo[username]}的貸款，本金{$banknum}{$moneyname}+利息{$lenaccnum}{$moneyname}，扣除用戶擴展積分情況︰{$cinfo}，歸還銀行{$bankhavenum}{$moneyname}]]></item>
+				<item id="log_open"><![CDATA[{$_G[username]}花費{$lognum}{$moneyname}開戶]]></item>
+				<item id="loginpass"><![CDATA[登錄密碼]]></item>
+				<item id="money_num"><![CDATA[操作金額]]></item>
+				<item id="money_numshow"><![CDATA[金額]]></item>
+				<item id="money_unit"><![CDATA[銀行貨幣]]></item>
+				<item id="mybank_info"><![CDATA[賬戶信息]]></item>
+				<item id="mybank_opentime"><![CDATA[開戶時間]]></item>
+				<item id="mybank_pass"><![CDATA[銀行密碼]]></item>
+				<item id="mybank_status"><![CDATA[賬戶狀態]]></item>
+				<item id="mybank_status_yes"><![CDATA[正常使用]]></item>
+				<item id="mybank_status_no"><![CDATA[已被凍結]]></item>
+				<item id="new_bankcreator"><![CDATA[新創始人]]></item>
+				<item id="no_banklist"><![CDATA[還沒有銀行建立。]]></item>
+				<item id="no_datalist"><![CDATA[還沒有相關數據。]]></item>
+				<item id="notice_title"><![CDATA[注意事項]]></item>
+				<item id="num"><![CDATA[數量]]></item>
+				<item id="off_changep"><![CDATA[更換創始人]]></item>
+				<item id="off_delbank"><![CDATA[刪除銀行]]></item>
+				<item id="off_notice"><![CDATA[1、刪除銀行將直接刪除銀行的相關數據，並不作退錢等處理。<br />2、更換創始人不會更新銀行創始時間。<br />3、對于銀行實際資本小于0或者不能支持銀行業務的可以采取融資或者破產處理。<br />4、對于破產的銀行為了保障儲戶的利益，可以采取如下措施︰<br />&nbsp;&nbsp;ヾ將創始人更改為任何一個管理員；<br />&nbsp;&nbsp;ゝ修改相關參數，去掉銀行行長，為銀行融資支持銀行發展；<br />&nbsp;&nbsp;ゞ發布公告限定時間讓儲戶盡快取消該銀行的相關業務；<br />&nbsp;&nbsp;々最後刪除銀行，完成破產。]]></item>
+				<item id="pas_changepass"><![CDATA[修改銀行密碼]]></item>
+				<item id="pas_newpass"><![CDATA[新的密碼]]></item>
+				<item id="pas_newpass2"><![CDATA[再次確認]]></item>
+				<item id="pas_close"><![CDATA[消除銀行賬戶]]></item>
+				<item id="pas_notice"><![CDATA[1、如果忘記銀行密碼請告知銀行行長處理。<br />2、消除銀行賬戶必須在沒有定期存款和貸款的情況下才能進行操作。<br />3、消戶時將不給予支付活期利息，為了避免損失您可以先手動結息。]]></item>
+				<item id="pm_acc_title"><![CDATA[[銀行通知]銀行賬戶變動通知]]></item>
+				<item id="pm_accstatus_content"><![CDATA[您在 {$bankinfo[bankname]} 的賬戶狀態被調整為︰{$chgstatus}，請到銀行核實。]]></item>
+				<item id="pm_accpass_content"><![CDATA[您在 {$bankinfo[bankname]} 的銀行密碼被重置為 {$newbankpass}，為了安全和方便起見請及時到銀行修改密碼。]]></item>
+				<item id="pm_acctocur_content"><![CDATA[您在 {$bankinfo[bankname]} 的 {$banknum}{$moneyname} 定期存款被強行轉移至您的活期賬戶，定期與活期的利息均受到損失。引起該操作的可能原因是您欠貸到期未還，請到銀行核實。]]></item>
+				<item id="pm_addbank_title"><![CDATA[[銀行通知]您的銀行已經開設成功\]]></item>
+				<item id="pm_addbank_content"><![CDATA[恭喜您，您的銀行 {$var_bankname} 已經開設成功\！您為此支付了開設手續費 {$poundage}{$moneyname}，同時為銀行初始融資 {$var_investment}{$moneyname}。由于銀行當前為默認參數，所以暫時是關閉狀態不能營業，請及時到銀行去設定合理的系統參數同時開啟銀行即可正常營業。請注意中央銀行為您提供的保底利息比率，這樣有利于銀行的發展。祝您的銀行欣欣向榮！]]></item>
+				<item id="pm_chg_title"><![CDATA[[銀行通知]銀行匯款消息通知]]></item>
+				<item id="pm_chg_content"><![CDATA[用戶 {$_G[username]} 匯款 {$_G[gp_banknum]}{$moneyname} 到您在 {$bankinfo[bankname]} 的賬戶上，請注意查收。具體信息請到銀行查看。]]></item>
+				<item id="pm_chgcreator_title"><![CDATA[[銀行通知]銀行創始人更改通知]]></item>
+				<item id="pm_chgcreator_content1"><![CDATA[銀行系統已經將 {$bankinfo[bankname]} 的創始人由 {$bankinfo[creator]} 更改為您，您現在擁有該銀行的所有控制權，趕快去用心經營吧！]]></item>
+				<item id="pm_chgcreator_content2"><![CDATA[銀行系統已經將 {$bankinfo[bankname]} 的創始人由您更改為 {$newcreator} ，您不再擁有該銀行的控制權，特此通知。]]></item>
+				<item id="pm_fin_title"><![CDATA[[銀行通知]銀行投資消息通知]]></item>
+				<item id="pm_fin_content"><![CDATA[用戶 {$_G[username]} 為您開設的銀行投資了 {$banknum}{$moneyname}，具體信息請到銀行查看。]]></item>
+				<item id="pm_fin_get_title"><![CDATA[[銀行通知]銀行投資提取通知]]></item>
+				<item id="pm_fin_get_content"><![CDATA[用戶 {$_G[username]} 從 {$bankinfo[bankname]} 中提取資金 {$banknum}{$moneyname} 到您的現金中，請查收。]]></item>
+				<item id="pm_lencheck_title"><![CDATA[[銀行通知]貸款審批通知]]></item>
+				<item id="pm_lencheckno_content"><![CDATA[很遺憾的通知您，您在 {$bankinfo[bankname]} 申請的 {$banknum}{$moneyname} 貸款沒有通過審批。]]></item>
+				<item id="pm_lencheckyes_content"><![CDATA[恭喜您，您在 {$bankinfo[bankname]} 申請的 {$banknum}{$moneyname} 貸款通過審批啦，貸款金額已經劃到您的現金中，記住早還貸款少付利息哦。]]></item>
+				<item id="pm_lenoff_title"><![CDATA[[銀行通知]貸款欠款處理通知]]></item>
+				<item id="pm_lenoffok_content"><![CDATA[您好，您在 {$bankinfo[bankname]} 的 {$banknum}{$moneyname} 貸款到期沒有歸還，銀行采取強扣的方式進行處理，您應該支付本金 {$banknum}{$moneyname}+利息 {$lenaccnum}{$moneyname}，銀行從您的活期賬戶中扣除 {$getcur}{$moneyname}，現金中扣除 {$getmom}{$moneyname} 用于支付貸款。現已扣款成功\，謝謝合作。]]></item>
+				<item id="pm_lenoffup_content"><![CDATA[中央行長您好，用戶 {$buleninfo[username]} 在 {$bankinfo[bankname]} 的 {$banknum}{$moneyname} 貸款到期沒有歸還，請協助處理相關事宜。謝謝。\n\n處理地址︰[url]{$boardurl}plugin.php?id=bank_ane:bank&bankid={$bankid}&mode=admin&action=lma&noid={$noid}[/url]]]></item>
+				<item id="pm_lenoffdo_content"><![CDATA[您好，您在 {$bankinfo[bankname]} 的一筆本金{$banknum}{$moneyname}+利息{$lenaccnum}{$moneyname}的貸款到期未還，現中央銀行對您的擴展積分進行如下調整用于抵消貸款︰{$cinfo}。有貸有還，再貸不難，望誠信合作。謝謝。]]></item>
+				<item id="search_onlysys"><![CDATA[僅查詢管理操作]]></item>
+				<item id="search_minmoney"><![CDATA[操作金額下限]]></item>
+				<item id="select_bank"><![CDATA[請選擇銀行]]></item>
+				<item id="supadmin_menu_add"><![CDATA[添加銀行]]></item>
+				<item id="supadmin_menu_off"><![CDATA[破產處理]]></item>
+				<item id="supadmin_menu_view"><![CDATA[操作記錄]]></item>
+				<item id="supbank_notice"><![CDATA[中央銀行公告信息]]></item>
+				<item id="supbank_admin"><![CDATA[中央銀行行長]]></item>
+				<item id="supbank_admininfo"><![CDATA[(管理員默認為中央銀行行長)]]></item>
+				<item id="system_currentacc"><![CDATA[中央銀行活期存儲保底利息利率]]></item>
+				<item id="system_fixedacc"><![CDATA[中央銀行定期存儲保底利息利率]]></item>
+				<item id="thousand_sign"><![CDATA[　]]></item>
+				<item id="timebegin"><![CDATA[生效時間]]></item>
+				<item id="timeend"><![CDATA[到期時間]]></item>
+				<item id="touser"><![CDATA[對方帳號]]></item>
+				<item id="type"><![CDATA[類型]]></item>
+				<item id="upwards"><![CDATA[以上]]></item>
+				<item id="view_more"><![CDATA[查看詳情]]></item>
+				<item id="upgradetodzx"><![CDATA[DZ X1.5升級︰ANE]]></item>
+				<item id="end"><![CDATA[]]></item>
+				<item id="upgradetodzx2"><![CDATA[DZ X3.2升級︰<a href=http://bbs.wmzz.cn/ target=_blank>火舞狂龍</a>]]></item>
+			</item>
+			<item id="installlang">
+				<item id="installalready"><![CDATA[您已經安裝過社區銀行，請返回。]]></item>
+				<item id="addaddition"><![CDATA[請問您是否願意添加“社區銀行”到您的資源列表？]]></item>
+				<item id="czw1"><![CDATA[社區銀]]></item>
+				<item id="czw2"><![CDATA[社區銀]]></item>
+				<item id="czw3"><![CDATA[社區銀插件]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+	<item id="Time"><![CDATA[2015-02-07 16:15]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[ªÀ°Ï»È¦æ]]></item>
+			<item id="identifier"><![CDATA[bank_ane]]></item>
+			<item id="description"><![CDATA[ªÀ°Ï»È¦æ¡A¥Î¤_¹ê²{»È¦æªº¥\¯à¡C]]></item>
+			<item id="datatables"><![CDATA[banklist,bankoperation,banklog]]></item>
+			<item id="directory"><![CDATA[bank_ane/]]></item>
+			<item id="copyright"><![CDATA[¤ýªÌªÀ°Ï & wz2006.com]]></item>
+			<item id="version"><![CDATA[2.8]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[bank]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[ªÀ°Ï»È¦æ]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[ªÀ°Ï»È¦æ]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[²{ª÷ÂX®i¿n¤À¶µ]]></item>
+				<item id="description"><![CDATA[¿ï¾Ü§A»Ý­n³]©w¬°²{ª÷ªºÂX®i¿n¤À¶µ]]></item>
+				<item id="variable"><![CDATA[moneycredits]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[extcredits2]]></item>
+				<item id="extra"><![CDATA[extcredits1
+extcredits2
+extcredits3
+extcredits4
+extcredits5
+extcredits6
+extcredits7
+extcredits8]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[¦s´ÚÂX®i¿n¤À¶µ]]></item>
+				<item id="description"><![CDATA[¿ï¾Ü§A»Ý­n³]©w¬°¦s´ÚªºÂX®i¿n¤À¶µ¡A³]©w¸Ó¶µ¶È¬°Åã¥Ü¥Î¤á¦s´Ú¼Æ¥Ø¡A½Ð¤£­n±N¸Ó¦r¬q¥Î¤_°£Åã¥Ü¥~ªº¨ä¥L¥ô¦ó¾Þ§@¡I³]©w¡§none¡¨§Y¤£¶}±Ò¸Ó¥\¯à¡A¥Î¤áªº¦s´Ú¬°Áô¨p¡C]]></item>
+				<item id="variable"><![CDATA[depositcredits]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[none]]></item>
+				<item id="extra"><![CDATA[none
+extcredits1
+extcredits2
+extcredits3
+extcredits4
+extcredits5
+extcredits6
+extcredits7
+extcredits8]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[±Ò¥Î³æ»È¦æ¼Ò¦¡ªº»È¦æ½s¸¹]]></item>
+				<item id="description"><![CDATA[¥Î¤_³]©w±N¦h»È¦æ¨t²Î§ï³y¬°³æ»È¦æ¨t²Î¨Ï¥Î¡A¶ñ¤J¡§0¡¨¬°±Ò¥Î¦h»È¦æ¨t²Î¡A¶ñ¤J¥ô¦ó¤@­Ó»È¦æªº½s¸¹§Y±Ò¥Î³æ»È¦æ¼Ò¦¡¡A·|­û¶i¤J»È¦æ±N¤£Åã¥Ü»È¦æ¦Cªí¡A¦ý»È¦æ¦æªø³X°Ý¤´·|¥X²{¦Cªí¡C]]></item>
+				<item id="variable"><![CDATA[onlybankid]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[¬O§_Ãö³¬»È¦æ]]></item>
+				<item id="description"><![CDATA[¦pªGÃö³¬»È¦æ«h·|­û¤£¯à°÷¶i¤J¡A¦ý¬O¤£¼vÅTºÞ²z­û¨Ï¥Î]]></item>
+				<item id="variable"><![CDATA[close]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[Ãö³¬»È¦æ®ø®§´£¥Ü]]></item>
+				<item id="description"><![CDATA[¦pªGÃö³¬»È¦æ¡A«hÅã¥Üµ¹·|­û¦¹«H®§]]></item>
+				<item id="variable"><![CDATA[closemessage]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[ª÷¿Ä·~¾ã¹y¤¤¡A½Ðªð¦^µy«á¦A¨Ó¡C]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[»È¦æ­º­¶¤½§i]]></item>
+				<item id="description"><![CDATA[¥i¥H¥Î¤_»¡©ú»È¦æ±¡ªp¡A¤]¥i¥H¥Î¤_¬°¬Y­Ó»È¦æ¥´¼s§i¡A¤ä«ùHTML¥N½X]]></item>
+				<item id="variable"><![CDATA[notice]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[·sªÀ°Ï»È¦æ¤W½u¡A·|­û¥i¥H¦Û¤v¶}³]»È¦æ¡A»Ý­n¶}³]»È¦æªº·|­û½ÐÁp¨t¤¤¥¡»È¦æ¦æªø¡C]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[¤¤¥¡»È¦æ¦æªø]]></item>
+				<item id="description"><![CDATA[¦h¥Î¤á½Ð¥Î¥b¨¤¡§,¡¨¹j¶}¡A°Ï¤À¤j¤p¼g]]></item>
+				<item id="variable"><![CDATA[bankadmin]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[ºÞ²z­û¬O§_¬°¤¤¥¡»È¦æ¦æªø]]></item>
+				<item id="description"><![CDATA[¬O§_±NºÞ²z­ûÀq»{³]¸m¬°¤¤¥¡»È¦æ¦æªø]]></item>
+				<item id="variable"><![CDATA[adminisbankadm]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[¬¡´Á¦sÀx«O©³§Q®§]]></item>
+				<item id="description"><![CDATA[¤¤¥¡»È¦æ¬°¥Î¤á¦Û¶}»È¦æªº«O©³¤ä¥I¬¡´Á§Q®§¡A¶W¹L¸Ó§Q®§ªº³¡¤À¥Ñ¨p¦³»È¦æ¦Û¤v­t¾á¡C]]></item>
+				<item id="variable"><![CDATA[currentaccrual]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0.0001]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[©w´Á¦sÀx«O©³§Q®§]]></item>
+				<item id="description"><![CDATA[¤¤¥¡»È¦æ¬°¥Î¤á¦Û¶}»È¦æªº«O©³¤ä¥I©w´Á§Q®§¡A¶W¹L¸Ó§Q®§ªº³¡¤À¥Ñ¨p¦³»È¦æ¦Û¤v­t¾á¡C]]></item>
+				<item id="variable"><![CDATA[fixedaccrual]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[0.0005]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[¤í¶Uµu®ø®§³qª¾¤H­û]]></item>
+				<item id="description"><![CDATA[¥²¶·¬O¤¤¥¡»È¦æ¦æªø¡A¦ý¥uµ¹¤©³o¨½¶ñ¼gªº¥Î¤áµo°e³B²z¶U´Úªºµu®ø®§³qª¾¡C¤£¶ñ¼g±NµL¤Hª¾¹D¤í¶Uªº®ø®§¡I]]></item>
+				<item id="variable"><![CDATA[lenmsgto]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[¿n¤À¥æ©ö³]©w]]></item>
+				<item id="description"><![CDATA[¥Î¤_³]©w¦UºØ¿n¤À»Pª÷¿ú¤§¶¡ªº¥ô·NÂà´«¡C¤@¦æ¬°¤@ºØ¿n¤À¥æ©ö³]©w¡A®æ¦¡¬°¡§¿n¤À¦r¬q,½æ¥X»ù®æ,¶R¤J»ù®æ¡¨¡A¨Ò¦p¡§extcredits1,10,20¡¨ªí¥Üextcredits1¥Îª÷¿ú½æ¥X¬O10¤¸¡A¶R¤J¬O20¤¸¡C¦h­Ó¿n¤À¥æ©ö´N³]©w¦h¦æ¡A¤£³]©wªº¦r¬q¤£°Ñ»P¥æ©ö¡A²{ª÷©M¦s´Ú¦r¬q³]©wµL®Ä¡C]]></item>
+				<item id="variable"><![CDATA[buycredits]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[extcredits1,10,20
+extcredits2,0,0
+extcredits3,0,0
+extcredits4,0,0
+extcredits5,0,0
+extcredits6,0,0
+extcredits7,0,0
+extcredits8,0,0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="accounts_close"><![CDATA[±zªº±b¸¹¤w³Q»È¦æ­áµ²¡A½ÐÁp¨t»È¦æ¦æªø³B²z¡C]]></item>
+				<item id="accounts_toclose"><![CDATA[¹ï¤è»È¦æ±b¸¹¤w³Q­áµ²¡A¤£¯à¶i¦æ¸Ó¾Þ§@¡C]]></item>
+				<item id="action_success"><![CDATA[®¥³ß±z¡A¾Þ§@¦¨¥\\¡C]]></item>
+				<item id="bankset_success"><![CDATA[»È¦æ°Ñ¼Æ­×§ï¦¨¥\\¡A²{±N¸õÂà¨ìºÞ²z­º­¶¡C]]></item>
+				<item id="bankname_error"><![CDATA[»È¦æ¦WºÙ¿ù»~¡A½Ðªð¦^­«·s¶ñ¼g¡C]]></item>
+				<item id="banknum_error"><![CDATA[ª÷ÃB¼Æ¥Ø¦³»~¡A½Ðªð¦^¡C]]></item>
+				<item id="banklogo_error"><![CDATA[»È¦æLOGO¼Ð§Ó¦a§}¿ù»~¡A½Ðªð¦^­«·s¶ñ¼g¡C]]></item>
+				<item id="bankrate_error"><![CDATA[»È¦æ§Q²v³]¸m¿ù»~¡A©Ò¦³§Q²v¥²¶·¬O¤£¤p¤_0ªº¼Æ¦r¡A½Ðªð¦^­«·s¶ñ¼g¡C]]></item>
+				<item id="bankroll_error"><![CDATA[»È¦æ¸ê¥»¤£¨¬¼È®É°±¤î¸Ó·~°È¡A§Y±N¿Ä¸ê©ÎªÌ¯}²£¤¤¡A½Ðªð¦^¡C]]></item>
+				<item id="buy_close"><![CDATA[»È¦æ¼È®É¤£¤¹³\\¿n¤À¶R½æ¡A½Ðªð¦^¡C]]></item>
+				<item id="buynum_close"><![CDATA[¿n¤À¼Æ¶q¦³»~¡A½Ðªð¦^¡C]]></item>
+				<item id="config_error"><![CDATA[»È¦æ°Ñ¼Æ³]¸m¿ù»~¡A½Ð³qª¾ºÞ²z­û³]©w¡C]]></item>
+				<item id="configexc_error"><![CDATA[¥¼¶}±Ò²{ª÷ÂX®i¿n¤À¶µ¿n¤À¡A½Ð³qª¾ºÞ²z­û³]©w]]></item>
+				<item id="creator_error"><![CDATA[»È¦æ³Ð©l¤H³]©w¿ù»~¡A½Ðªð¦^­×§ï¡C]]></item>
+				<item id="creatormoney_error"><![CDATA[»È¦æ³Ð©l¤Hªº¸êª÷¤£¨¬¥H¤ä¥I¶}³]»È¦æ©M§ë¸êªº¶O¥Î¡A½Ðªð¦^¡C]]></item>
+				<item id="clear_error"><![CDATA[±z¦b¥»¦æ¾Ö¦³°£¬¡´Á¥H¥~ªº·~°È¡A¼È®É¤£¯à®ø¤á¡A½Ðªð¦^¡C]]></item>
+				<item id="fixdaynum_error"><![CDATA[©w´Á¦s´Úªº¤Ñ¼Æ¤£±o¤p¤_30¤Ñ¡A½Ðªð¦^¡C]]></item>
+				<item id="lendaynum_error"><![CDATA[¶U´Ú¤Ñ¼Æ¿ù»~¡A½Ðªð¦^¡C]]></item>
+				<item id="lofok_error"><![CDATA[¹ï¤è¦s´Ú©M²{ª÷¤£¨¬¥H¤ä¥I¶U´Ú¤Î¨ä§Q®§Á`ÃB¡A½Ðªð¦^¨Ï¥Î³ø§i¥\\¯àÅý¤¤¥¡¦æªøµ¹¤©³B²z¡C]]></item>
+				<item id="lofup_error"><![CDATA[¨t²Î¨S¦³³]¸m³ø§i¹ï¶H¡A½Ðªð¦^ª½±µÁp¨t¤¤¥¡¦æªø³B²z¡C]]></item>
+				<item id="logdel_error"><![CDATA[¤é§Ó§R°£¤Ñ¼Æ¿ù»~¡A¥u¯à²M²z30¤Ñ¤Î¨ä¥H«eªº°O¿ý¡A½Ðªð¦^¡C]]></item>
+				<item id="loginpass_error"><![CDATA[±zªº½×¾Â±b¸¹µn¿ý±K½X¿ù»~¡A½Ðªð¦^¡C]]></item>
+				<item id="moneynum_error"><![CDATA[±zªº²{ª÷¤£¨¬¥H¶i¦æ¸Ó¾Þ§@¡A½Ðªð¦^¡C]]></item>
+				<item id="no_open"><![CDATA[±zÁÙ¨S¦³¦b¥»»È¦æ¶}¤á¡A½Ðªð¦^¶}¤á«á¦A¾Þ§@¡C]]></item>
+				<item id="no_openbank"><![CDATA[±zÁÙ¨S¦b¥ô¦ó»È¦æ¶}¤á¡A¨S¦³±zªº½ã¤á°O¿ý¡A½Ðªð¦^¡C]]></item>
+				<item id="open_success"><![CDATA[®¥³ß±z¶}¤á¦¨¥\\¡A±z¥i¥H¶i¦æ¬ÛÃö·~°È¾Þ§@¤F¡C]]></item>
+				<item id="pass_error"><![CDATA[»È¦æ±K½X¿ù»~¡A½Ðªð¦^­×§ï¡C]]></item>
+				<item id="pass_twoerror"><![CDATA[¨â¦¸»È¦æ±K½X¿é¤J¤£¤@­P¡A½Ðªð¦^¡C]]></item>
+				<item id="selectbank_error"><![CDATA[½Ð¿ï¾Ü¤@­Ó»È¦æ¶i¦æ¾Þ§@¡A½Ðªð¦^¡C]]></item>
+				<item id="user_error"><![CDATA[¥Î¤á¦W¿é¤J¿ù»~©ÎªÌ¤£¦s¦b¸Ó¥Î¤á¡A½Ðªð¦^¡C]]></item>
+				<item id="var_error"><![CDATA[°Ñ¼Æ¶Ç»¼¿ù»~¡A½Ðªð¦^¡C]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="english"><![CDATA[chinese]]></item>
+				<item id="bank"><![CDATA[ªÀ°Ï»È¦æ]]></item>
+				<item id="memcp_info"><![CDATA[½ã¤á«H®§]]></item>
+				<item id="username"><![CDATA[¥Î¤á¦W]]></item>
+				<item id="usergroup"><![CDATA[¥Î¤á²Õ]]></item>
+				<item id="password_confirm"><![CDATA[±K½X½T»{]]></item>
+				<item id="keyword"><![CDATA[ÃöÁä¦r]]></item>
+				<item id="yes"><![CDATA[¬O]]></item>
+				<item id="no"><![CDATA[§_]]></item>
+				<item id="admin_menu"><![CDATA[ºÞ²z¾Þ§@µæ³æ]]></item>
+				<item id="admin_menu_accounts"><![CDATA[±b¸¹ºÞ²z]]></item>
+				<item id="admin_menu_lendok"><![CDATA[¶U´Ú¼f§å]]></item>
+				<item id="admin_menu_lendoff"><![CDATA[¤í¶U³B²z]]></item>
+				<item id="admin_menu_financing"><![CDATA[»È¦æ§ë¸ê]]></item>
+				<item id="admin_menu_varset"><![CDATA[°Ñ¼Æ³]¸m]]></item>
+				<item id="admin_menu_log"><![CDATA[»È¦æ¤é§Ó]]></item>
+				<item id="admin_welcome"><![CDATA[Åwªï¶i¤J»È¦æºÞ²z¡C<br /><br />½Ðª`·N¡J»È¦æºÞ²z¤¤ªº¦U¶µ¾Þ§@³£±N¼vÅT¨ì»È¦æªºµo®i¡A½ÐÂÔ·V¾Þ§@¡C¤¤¥¡»È¦æ¥i¯à¬°¸Ó»È¦æ´£¨Ñ¤F¬¡´Á©M©w´Áªº«O©³§Q®§¡A¤]´N¬O»¡¬°¥Î¤á¤ä¥Iªº¦s´Ú§Q®§¤¤¤¤¥¡»È¦æ¹ï¤@©wªº¤ñ²v¶R³æ¡A¶W¥X¤ñ²vªº³¡¤À¥Ñ»È¦æ¦Û¤v­t³d¡C©Ò¦³¶}¤á¶O¥Î¡BÂà±b¤âÄò¶O¥Î¥H¤Î¶U´Ú§Q®§©Ò±oÂk»È¦æ©Ò¦³¡C»È¦æ¦æªø¥i¥H¬°»È¦æ§ë¸ê¡A·í»È¦æ¦Û¤vªº¸êª÷¡]¤£¥]¬A¦s´Ú¸êª÷¡^¤£¯à¹BÀç¾ã­Ó»È¦æ®É±N¹ï»È¦æ¶i¦æ¯}²£³B²z¡A¬ÛÃö»È¦æ³d¥ô¤H±N·|¨ü¨ì¬ÛÀ³ªº³B²z¡C<br /><br />¤p´£¥Ü¡J­×§ï»È¦æ°Ñ¼Æ¤¤¡A­×§ï¬¡´Á§Q²v±N¥ß§Y¥Í®Ä¡A­×§ï©w´Á¥H¤Î¶U´Ú§Q²v±N¥u¼vÅT­×§ï¥H«áªº©w´Á¦s´Ú©M¶U´Ú¡A­×§ï«eªº©w´Á©M¶U´Ú±N¨ÌÂÂ«ö·Ó·~°È¿ì²z®Éªº§Q²v­pºâ¡C]]></item>
+				<item id="action_sel"><![CDATA[¿ï¾Ü¾Þ§@]]></item>
+				<item id="bank_copyright"><![CDATA[ª©Åv«H®§]]></item>
+				<item id="bank_enter"><![CDATA[¶i¤J»È¦æ]]></item>
+				<item id="bank_isclose"><![CDATA[Ãö³¬¤¤]]></item>
+				<item id="bank_isopen"><![CDATA[¤w¶}¤á]]></item>
+				<item id="bank_info"><![CDATA[»È¦æÂ²¤¶]]></item>
+				<item id="bank_info_msg"><![CDATA[»È¦æ³]¸m¤¤¡A§Y±NÀç·~¡A·q½Ð´Á«Ý¡K¡K]]></item>
+				<item id="bank_info_addinfo"><![CDATA[ª`·N¡J·s³Ð«Øªº»È¦æÀq»{¬°Ãö³¬ª¬ºA¡A©Ò¦³§Q®§³]©w«öÀq»{³]¸m¡A»Ý»È¦æ³Ð©l¤H­×§ï°Ñ¼Æ«á¤~¯à¥¿±`Àç·~¡A¨t²Î·|¦Û°Êµo®ø®§§iª¾»È¦æ³Ð©l¤H¶i¦æ¬ÛÃö¾Þ§@¡C]]></item>
+				<item id="bank_info_creator"><![CDATA[»È¦æ³Ð©l¤H]]></item>
+				<item id="bank_info_creator_msg"><![CDATA[½Ð¿é¤J³Ð©l¤Hªº½×¾Â±b¸¹¡C]]></item>
+				<item id="bank_info_admin"><![CDATA[»È¦æ¦æªø]]></item>
+				<item id="bank_info_admin_msg"><![CDATA[³]©w»È¦æ¦æªø¡A»È¦æ³Ð©l¤HÀq»{¬°»È¦æ¦æªø¡A¦h­Ó»È¦æ¦æªø¥Î¥b¨¤¡§,¡¨¹j¶}¡C]]></item>
+				<item id="bank_info_name"><![CDATA[»È¦æ¦WºÙ]]></item>
+				<item id="bank_info_name_msg"><![CDATA[»È¦æªº¦W¦r¡A¬°¤F»È¦æªº«HÅA½Ð³]©w«á¤£­n¦A­×§ï¡C]]></item>
+				<item id="bank_info_logo"><![CDATA[»È¦æ¼Ð§Ó]]></item>
+				<item id="bank_info_logo_msg"><![CDATA[»È¦æLOGO¦a§}¡A¨S¦³½Ð¤£¶ñ¡A¼Ð·Ç¤j¤p120¡Ñ50¡C]]></item>
+				<item id="bank_info_poundage"><![CDATA[¶}³]»È¦æªá¶O]]></item>
+				<item id="bank_info_poundage_msg"><![CDATA[¶}³]»È¦æªº¤âÄò¶O¥Î¡A±q»È¦æ³Ð©l¤H¤¤¦©°£¡A¤£»Ý¶O¥Î½Ð¶ñ0¡C]]></item>
+				<item id="bank_info_time"><![CDATA[³Ð«Ø®É¶¡]]></item>
+				<item id="bank_info_allmoney"><![CDATA[»È¦æ¸ê²£]]></item>
+				<item id="bank_info_investment"><![CDATA[§ë¸êÁ`ÃB]]></item>
+				<item id="bank_info_investment_msg"><![CDATA[½Ð¿é¤J»È¦æªì©l§ë¸êª÷ÃB¡A¸Óª÷ÃB±q»È¦æ³Ð©l¤H²{ª÷¤¤¦©°£¨ÃÂà¦s¨ì»È¦æªº¸ê²£¤¤¡C]]></item>
+				<item id="bank_info_bankroll"><![CDATA[¹ê»Ú¸ê¥»]]></item>
+				<item id="bank_info_deposit"><![CDATA[»È¦æ¦s´Ú]]></item>
+				<item id="bank_info_usernum"><![CDATA[¥Î¤á¼Æ¶q]]></item>
+				<item id="bank_info_notice"><![CDATA[»È¦æ¤½§i]]></item>
+				<item id="bank_info_notice_msg"><![CDATA[¥Î¤_¤½¥Ü³Ì·s»È¦æ«H®§¡A·í»È¦æÃö³¬®É±N§@¬°Ãö³¬´£¥Ü«H®§¡C¥Î¤_¤½§i®É¤ä«ù¥N½X®æ¦¡¡C]]></item>
+				<item id="bank_info_opintro"><![CDATA[·~°È¤¶²Ð]]></item>
+				<item id="bank_info_open"><![CDATA[¶O¥Î]]></item>
+				<item id="bank_info_open_msg"><![CDATA[»È¦æ¶}¤á¶O¥Î¡AÃþ«¬¬°¾ã¼Æ¡A¤£»Ý­n¶}¤á¶O½Ð¶ñ0¡C]]></item>
+				<item id="bank_info_curacc"><![CDATA[¬¡´Á§Q²v]]></item>
+				<item id="bank_info_curacc_msg"><![CDATA[¥i¤À¯Å³]©w»È¦æ§Q²v¡A¨C¦æªí¥Ü¤@­Ó³]©w¡A¨C¦æªº®æ¦¡¬°¡§ª÷ÃB,§Q²v¡¨ªí¥Ü¸Óª÷ÃB¤Î¨ä¥H¤Wªº§Q²v¬°¸Ó§Q²v¡C¨Ò¦p¡§0,0.0001¡¨ªí¥Ü0¤¸¤Î¨ä¥H¤Wªº§Q²v¬°0.1¡@¡A¥i¥H³]©w¦h¦æ¥Î¤_±±¨î«öª÷ÃB¤j¤p¨Ï¥Î¤£¦Pªº§Q²v¡C]]></item>
+				<item id="bank_info_fixacc"><![CDATA[©w´Á§Q²v]]></item>
+				<item id="bank_info_fixacc_msg"><![CDATA[©w´Á§Q²v³]©w¡A¤ñ¦p¡§0.0005¡¨ªí¥Ü0.5¡@¡Aª`·N¡J©w´Á§Q²vªº­×§ï¤£¼vÅT¤w¸g¦s¤Jªº©w´Á¡A­×§ï«eªº©w´Á«ö¥Î¤á¦s¤J®Éªº§Q²v­pºâ¡C]]></item>
+				<item id="bank_info_lenacc"><![CDATA[¶U´Ú§Q²v]]></item>
+				<item id="bank_info_lenacc_msg"><![CDATA[¶U´Ú§Q²v³]©w¡A¤ñ¦p¡§0.001¡¨ªí¥Ü1¡@¡Aª`·N¡J¶U´Ú§Q²vªº­×§ï¤£¼vÅT¤w¦s¦bªº¶U´Ú¡A­×§ï«eªº¶U´Ú¨ÌÂÂ«ö·Ó¥Î¤á¶U´Ú®Éªº§Q²v­pºâ¡C]]></item>
+				<item id="bank_info_chgacc"><![CDATA[Âà±b¤âÄò¶O²v]]></item>
+				<item id="bank_info_chgacc_msg"><![CDATA[Âà±b¦¬ªº¤âÄò¶O¤ñ²v¡A¤ñ¦p¡§0.001¡¨ªí¥Ü1¡@¡C]]></item>
+				<item id="bank_info_isclose"><![CDATA[¬O§_Ãö³¬»È¦æ]]></item>
+				<item id="bank_info_isclose_msg"><![CDATA[Ãö³¬»È¦æ«á¥u¦³»È¦æ¦æªø¥i¥H³X°Ý¡C]]></item>
+				<item id="bank_info_loginpass_msg"><![CDATA[¸Ó¾Þ§@»Ý­n±z¿é¤J½×¾Â±b¸¹ªºµn¿ý±K½X¡C]]></item>
+				<item id="bank_welcome"><![CDATA[Åwªï¨Ó¨ì]]></item>
+				<item id="bank_list"><![CDATA[»È¦æ¦Cªí]]></item>
+				<item id="bank_left_menu"><![CDATA[¾Þ§@µæ³æ]]></item>
+				<item id="bank_left_menu_show"><![CDATA[§Úªº½ã¤á]]></item>
+				<item id="bank_left_menu_buy"><![CDATA[¿n¤À¶R½æ]]></item>
+				<item id="bank_left_menu_buylog"><![CDATA[¿n¤À¶R½æ°O¿ý]]></item>
+				<item id="bank_left_menu_list"><![CDATA[°]´I±Æ¦æ]]></item>
+				<item id="bank_menu_home"><![CDATA[Àç·~¤jÆU]]></item>
+				<item id="bank_menu_cur"><![CDATA[¬¡´ÁÀx»W]]></item>
+				<item id="bank_menu_fix"><![CDATA[©w´ÁÀx»W]]></item>
+				<item id="bank_menu_chg"><![CDATA[½ã¤á¶×´Ú]]></item>
+				<item id="bank_menu_lend"><![CDATA[¶U´Ú±MÂd]]></item>
+				<item id="bank_menu_pass"><![CDATA[½ã¤áºÞ²z]]></item>
+				<item id="bank_menu_log"><![CDATA[²z°]¤é§Ó]]></item>
+				<item id="bank_menu_log_my"><![CDATA[§Úªº¾Þ§@¤é§Ó]]></item>
+				<item id="bank_menu_log_tome"><![CDATA[§Ú±µ¦¬ªº¤é§Ó]]></item>
+				<item id="bank_menu_adm"><![CDATA[»È¦æºÞ²z]]></item>
+				<item id="buy_buy"><![CDATA[¶R¤J]]></item>
+				<item id="buy_buyprice"><![CDATA[¶R¤J»ù®æ]]></item>
+				<item id="buy_buyclose"><![CDATA[¤£¤¹³\\¶R¤J]]></item>
+				<item id="buy_sell"><![CDATA[½æ¥X]]></item>
+				<item id="buy_sellprice"><![CDATA[½æ¥X»ù®æ]]></item>
+				<item id="buy_sellclose"><![CDATA[¤£¤¹³\\½æ¥X]]></item>
+				<item id="buy_choice"><![CDATA[¶R½æªº¿n¤ÀÃþ«¬]]></item>
+				<item id="buy_showinfo"><![CDATA[Åwªï¨Ï¥Î¿n¤À¶R½æ¥\\¯à¡A·í«e³æ­Ó¶R½æ»ù®æ¦p¤U¡J]]></item>
+				<item id="buy_showmy"><![CDATA[·í«e±z¦³]]></item>
+				<item id="buy_notice"><![CDATA[1¡B¿n¤À¶R½æ¬O²{ª÷¥æ©ö¡A»P¦s´ÚµLÃö¡C<br />2¡B¿n¤À¶R½æ»ù®æ·|¦]³]©w¦ÓÅÜ¤Æ¡A½Ð§â´¤®É¾÷¡C]]></item>
+				<item id="chg_myshow"><![CDATA[·í«e¶×´Ú¤âÄò¶O²v¬°{$bankinfo[changetaxshow]}¡@¡AÅwªï¨Ï¥Î¥»¦æ¶×´Ú·~°È¡C]]></item>
+				<item id="chg_taxcheck"><![CDATA[¶O¥Î­pºâ]]></item>
+				<item id="chg_taxinfo"><![CDATA[·í«eª÷ÃBªº¤âÄò¶O¥Î¬°¡J]]></item>
+				<item id="chg_notice"><![CDATA[1¡B¶×´Úª÷ÃB©M¤âÄò¶O±q±zªº²{ª÷¤¤¦©°£¡C<br />2¡B¹ï¤è»Ý¦b¥»¦æ¶}¤á±z¤~¯àµ¹¨ä¶×´Ú¡C<br />3¡B¶×´Úª÷ÃB¤£¯à¤Ö¤_10¡C]]></item>
+				<item id="confirm_msg"><![CDATA[±z½T»{¶i¦æ¸Ó¾Þ§@¶Ü¡H]]></item>
+				<item id="cur_myshow"><![CDATA[±z·í«eªº¦s´Úª÷ÃB¬° {$mybankinfo[opnum]} {$moneyname}¡A¬¡´Á§Q²v¬°{$mycurrateshow}¡A­p®§®É¶¡±q{$mybankinfo[curtimeshow]}¶}©l¡C]]></item>
+				<item id="cur_in"><![CDATA[¦s´Ú]]></item>
+				<item id="cur_out"><![CDATA[¨ú´Ú]]></item>
+				<item id="cur_accrual"><![CDATA[±z·í«e¥i±o§Q®§]]></item>
+				<item id="cur_accrualok"><![CDATA[¤â°Êµ²®§]]></item>
+				<item id="cur_notice"><![CDATA[1¡B¬¡´Á§Q²v¥i¯à¬O«ö±z¦s´Ú¦h¤Ö¦Ó©w¡A½Ðª`·N»È¦æ³]©w¡C<br />2¡B»È¦æ¬¡´Á§Q²v·|ÀH»È¦æ³]©wªº§ïÅÜ¦Ó§ïÅÜ¡A§Q²v¤£¬O¤@­ÓÃ­©w­È¡C<br />3¡B¦s¨ú´Ú¾Þ§@®É±N¦Û°Êµ²ºâ§Q®§¡C<br />4¡B·Q¾Ö¦³Ã­©wªº§Q²v±ÀÂË¨Ï¥Î©w´ÁÀx»W¡C]]></item>
+				<item id="daybefore"><![CDATA[¤Ñ¥H«eªº°O¿ý]]></item>
+				<item id="daynum"><![CDATA[¾Þ§@¤Ñ¼Æ]]></item>
+				<item id="deladminlog"><![CDATA[¥]¬AºÞ²z°O¿ý]]></item>
+				<item id="douer_changes1"><![CDATA[­áµ²»È¦æ½ã¤á]]></item>
+				<item id="douer_changes2"><![CDATA[¸Ñ­á»È¦æ½ã¤á]]></item>
+				<item id="douer_password"><![CDATA[­«¸m»È¦æ±K½X]]></item>
+				<item id="douer_viewlog"><![CDATA[¥Î¤á¬ÛÃö¾Þ§@°O¿ý]]></item>
+				<item id="douer_tocur"><![CDATA[¤ä¨ú¨ì¬¡´Á]]></item>
+				<item id="fin_give"><![CDATA[§Ú­n§ë¸ê»È¦æ]]></item>
+				<item id="fin_get"><![CDATA[±q»È¦æ¸ê¥»¤¤´£¨ú]]></item>
+				<item id="fin_gettouser"><![CDATA[µ¹·|­û]]></item>
+				<item id="fix_myshow"><![CDATA[·í«e©w´Á§Q²v¬°{$bankinfo[fixedrateshow]}¡@¡AÅwªï¨Ï¥Î©w´ÁÀx»W¡C]]></item>
+				<item id="fix_myfix"><![CDATA[§Úªº©w´Á°O¿ý]]></item>
+				<item id="fix_notice"><![CDATA[1¡B©w´Á§Q²v¥H±z¦s¤J®Éªº§Q²v­pºâ¡A¤£¨ü»È¦æ§Q²vªº½Õ¾ã¼vÅT¡C<br />2¡B©w´Á¦sÀx¤Ñ¼Æ¤£±o¤p¤_30¤Ñ¡C<br />3¡B´£«e¤ä¨ú©w´Á±N¤£¯àÀò±o§Q®§¡C<br />4¡B¨ì´Á«á¤ä¨ú©w´Á§Q®§¤]¶È­pºâ¨ì©w´Á¨ì´Á¤§®É¡A©w´Á¨ì´Á«áªº®É¶¡¤º¨S¦³¥ô¦ó§Q®§¡C<br />5¡B¦pªG±z©w´Á¥¼¨ì´Á¦ý§Æ±æ¨Ï¥Î¸êª÷¥i¥H¨Ï¥Î¶U´Ú¥\\¯à¡C]]></item>
+				<item id="fix_out"><![CDATA[¤ä¨ú]]></item>
+				<item id="fix_outform"><![CDATA[±z·í«e·Ç³Æ¤ä¨ú©w´Áªºª÷ÃB¬°{$fixinfo[opnum]}{$moneyname}¡A¦s¤J®É¶¡{$fixinfo[begintimeshow]}¡A¨ì´Á®É¶¡{$fixinfo[endtimeshow]}¡A¥i±o§Q®§{$myfixaccrual[all]}{$moneyname}]]></item>
+				<item id="frommoney"><![CDATA[±q²{ª÷¤¤¦©°£]]></item>
+				<item id="input_open"><![CDATA[§Ú­n¶}¤á]]></item>
+				<item id="input_submit"><![CDATA[´£  ¥æ]]></item>
+				<item id="len_accrual"><![CDATA[»Ý¤ä¥I§Q®§]]></item>
+				<item id="len_gb"><![CDATA[ÁÙ¶U]]></item>
+				<item id="len_gu"><![CDATA[¨ú®ø]]></item>
+				<item id="len_try"><![CDATA[¥Ó½Ð¶U´Ú]]></item>
+				<item id="len_mylist"><![CDATA[§Úªº¶U´Ú±¡ªp]]></item>
+				<item id="len_yes"><![CDATA[§å·Ç]]></item>
+				<item id="len_no"><![CDATA[»é¦^]]></item>
+				<item id="len_myshow"><![CDATA[Åwªï¨Ï¥Î§Ú¦æ¶U´Ú·~°È¡A·í«e¶U´Ú§Q²v¬°{$bankinfo[lendingrateshow]}¡@¡C]]></item>
+				<item id="len_notice"><![CDATA[1¡B¶U´Ú»Ý­n¶i¦æ¼f§å¡A¥Ó½Ð¤£¤@©w¥i¥HÀò±o¶U´Ú¡C<br />2¡B¶U´Ú§Q²v¥H¥Ó½Ð®Éªº§Q²v¬°·Ç¡A¤£¨ü»È¦æ«á´Á§Q²vÅÜ°Ê¼vÅT¡C<br />3¡B¶U´Ú§Q®§­pºâ±q§å·Ç®É¶¡¦ÜÁÙ¶U®É¶¡¡AÁÙ¶U¶V¦­¤ä¥Iªº§Q®§¶V¤Ö¡C¶W´Á³¡¤À«öÂù­¿§Q®§­pºâ¡C<br />4¡BÁÙ¶Uª÷ÃB±q²{ª÷¤¤¦©°£¡A½Ð¥ý·Ç³Æ¨¬°÷ª÷ÃB¨ì²{ª÷¤¤¡C<br />5¡B¨ì´Á¤£ÁÙªÌ»È¦æ¦³Åv±j¦æ±q¥Î¤á»È¦æ±b¸¹©ÎªÌ²{ª÷¤¤¦©°£¶U´Ú¡A¦pªG¤£°÷¶U´Úªº±Nµ¹¤©¤¤¥¡»È¦æ³B²z¡A¤¤¥¡»È¦æ±N·|½Õ¾ã¥Î¤áªº½×¾ÂÅv­­¥H¤ÎÂX®i¿n¤À¥Î¤_©è©ã¶U´Ú¡C<br />6¡B»È¦æ±j¦æÁÙ¶U¦pªG±q¦s´Ú¤¤¦©°£¡A»È¦æ¤£·|¬°·|­û¤ä¥I¦s´Ú§Q®§¡A¦s´Ú§Q®§±q¤ä¥I§¹¶U´Ú«á­pºâ¡A¦P®É¹ï¤_¶U´Ú¨ì´Á¤£ÁÙªº¥Î¤á»È¦æ¦³Åv±j¦æ¤ä¨ú©w´Á¦Ó¤£¤ä¥I§Q®§¡C]]></item>
+				<item id="len_outtime"><![CDATA[¤w¶W´Á]]></item>
+				<item id="list_cash"><![CDATA[²{ª÷±Æ¦æº]]]></item>
+				<item id="list_fund"><![CDATA[¦s´Ú±Æ¦æº]]]></item>
+				<item id="list_allmoney"><![CDATA[Á`¸ê²£±Æ¦æº]]]></item>
+				<item id="list_bankmoney"><![CDATA[»È¦æ¸ê²£±Æ¦æº]]]></item>
+				<item id="list_bankpeople"><![CDATA[»È¦æ¥Î¤á¼Æ±Æ¦æº]]]></item>
+				<item id="lof_ok"><![CDATA[±j¦©]]></item>
+				<item id="lof_up"><![CDATA[³ø§i]]></item>
+				<item id="lof_do"><![CDATA[³B²z]]></item>
+				<item id="lof_do_none"><![CDATA[¤£ªðª÷ÃBµ¹»È¦æ]]></item>
+				<item id="lof_do_only"><![CDATA[±N¥»ª÷ªðÁÙ»È¦æ]]></item>
+				<item id="lof_do_all"><![CDATA[±N¥»ª÷©M§Q®§³£ªðÁÙ»È¦æ]]></item>
+				<item id="log_addbank"><![CDATA[{$_G[username]}¼W¥[¤F»È¦æ{$var_bankname}¡A³Ð©l¤H{$var_creator}¡A¤ä¥I¤âÄò¶O{$poundage}{$moneyname}¡Aªì©l§ë¸ê{$var_investment}{$moneyname}]]></item>
+				<item id="log_accstatus"><![CDATA[{$_G[username]}§ó§ï¥Î¤á{$buser}ªº½ã¤áª¬ºA¬°{$chgstatus}]]></item>
+				<item id="log_accpass"><![CDATA[{$_G[username]}­«¸m¥Î¤á{$buser}ªº»È¦æ±K½X]]></item>
+				<item id="log_acctocur"><![CDATA[{$_G[username]}±j¦æ¤ä¨ú¥Î¤á{$buser}ªº©w´Á¦s´Ú{$banknum}{$moneyname}¦Ü¨ä¬¡´Á½ã¤á]]></item>
+				<item id="log_buycredits"><![CDATA[{$_G[username]}{$doname}¤F{$_G[gp_banknum]}{$unit}{$creditname}¡A¬ÛÃöª÷ÃB¬°{$paynum}{$moneyname}]]></item>
+				<item id="log_chgok"><![CDATA[{$_G[username]}¶×´Úµ¹{$touser}ª÷ÃB{$_G[gp_banknum]}{$moneyname}¡A¤ä¥I¤âÄò¶O{$mychgaccrual}{$moneyname}(»È¦æ¬°{$touser}¬¡´Áµ²®§{$yourcuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_changepass"><![CDATA[{$_G[username]}­×§ï»È¦æ±K½X]]></item>
+				<item id="log_chgcreator"><![CDATA[{$_G[username]}±N{$bankinfo[bankname]}ªº³Ð©l¤H¥Ñ{$bankinfo[creator]}§ó§ï¬°{$newcreator}]]></item>
+				<item id="log_clear"><![CDATA[{$_G[username]}®ø°£»È¦æ½ã¤á¡Aµ²ºâ¬¡´Á¦s´Ú{$banknum}{$moneyname}]]></item>
+				<item id="log_curin"><![CDATA[{$_G[username]}¦s¤J¬¡´Á{$_G[gp_banknum]}{$moneyname}¡AÁ`µ²®§{$mycuraccrual[all]}{$moneyname}(»È¦æµ²®§{$mycuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_curout"><![CDATA[{$_G[username]}¨ú¥X¬¡´Á{$_G[gp_banknum]}{$moneyname}¡AÁ`µ²®§{$mycuraccrual[all]}{$moneyname}(»È¦æµ²®§{$mycuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_curok"><![CDATA[{$_G[username]}µ²ºâ¬¡´Á§Q®§¡AÁ`µ²®§{$mycuraccrual[all]}{$moneyname}(»È¦æµ²®§{$mycuraccrual[bank]}{$moneyname})]]></item>
+				<item id="log_delbank"><![CDATA[{$_G[username]}§R°£»È¦æ¡A»È¦æ¦WºÙ¡J{$bankinfo[bankname]}]]></item>
+				<item id="log_dellog"><![CDATA[{$_G[username]}§R°£{$_G[gp_dellogday]}¤Ñ¥H«eªº¤é§Ó]]></item>
+				<item id="log_editbankset"><![CDATA[{$_G[username]}­×§ï»È¦æ°Ñ¼Æ³]¸m]]></item>
+				<item id="log_fin"><![CDATA[{$_G[username]}¬°»È¦æ§ë¸ê{$_G[gp_banknum]}{$moneyname}]]></item>
+				<item id="log_fin_get"><![CDATA[{$_G[username]}±q»È¦æ¸ê²£¤¤´£¨ú{$_G[gp_banknum]}{$moneyname}µ¹·|­û{$touser}]]></item>
+				<item id="log_fixin"><![CDATA[{$_G[username]}¦s¤J©w´Á{$_G[gp_banknum]}{$moneyname}¡A¤Ñ¼Æ{$_G[gp_daynum]}¡A§Q²v{$bankinfo[fixedrate]}]]></item>
+				<item id="log_fixout"><![CDATA[{$_G[username]}¨ú¥X©w´Á{$_G[gp_banknum]}{$moneyname}¡AÁ`µ²®§{$myfixaccrual[all]}{$moneyname}(»È¦æµ²®§{$myfixaccrual[bank]}{$moneyname})]]></item>
+				<item id="log_lencheckno"><![CDATA[{$_G[username]}©Úµ´{$buleninfo[username]}¥Î¤á{$banknum}{$moneyname}ªº¶U´Ú¥Ó½Ð]]></item>
+				<item id="log_lencheckyes"><![CDATA[{$_G[username]}³q¹L{$buleninfo[username]}¥Î¤á{$banknum}{$moneyname}ªº¶U´Ú¥Ó½Ð]]></item>
+				<item id="log_lentry"><![CDATA[{$_G[username]}¥Ó½Ð¶U´Ú{$banknum}{$moneyname}¡A¤Ñ¼Æ{$daynum}¤Ñ¡A§Q²v{$bankinfo[lendingrate]}]]></item>
+				<item id="log_lengiveup"><![CDATA[{$_G[username]}¨ú®ø¥Ó½Ð¶U´Ú{$leninfo[opnum]}{$moneyname}¡A¤Ñ¼Æ{$leninfo[endtime]}¤Ñ]]></item>
+				<item id="log_lengiveback"><![CDATA[{$_G[username]}ÂkÁÙ¶U´Ú{$banknum}{$moneyname}¡A¬°»È¦æ¤ä¥I¶U´Ú§Q®§{$mylenaccrual}{$moneyname}]]></item>
+				<item id="log_lenoffok"><![CDATA[{$_G[username]}±j¦©¥Î¤á{$buleninfo[username]}¨ì´Á¥¼ÁÙ¶U´Ú¡A¥»ª÷{$banknum}{$moneyname}+§Q®§{$lenaccnum}{$moneyname}¡A±q¬¡´Á¤¤¦©°£{$getcur}{$moneyname}¡A²{ª÷¤¤¦©°£{$getmom}{$moneyname}]]></item>
+				<item id="log_lenoffup"><![CDATA[{$_G[username]}³ø§i¥¡¦æ­n¨D³B²z¥Î¤á{$buleninfo[username]}¶U´Ú{$banknum}{$moneyname}¥¼ÁÙ]]></item>
+				<item id="log_lenoffdo"><![CDATA[{$_G[username]}³B²z¥Î¤á{$buleninfo[username]}ªº¶U´Ú¡A¥»ª÷{$banknum}{$moneyname}+§Q®§{$lenaccnum}{$moneyname}¡A¦©°£¥Î¤áÂX®i¿n¤À±¡ªp¡J{$cinfo}¡AÂkÁÙ»È¦æ{$bankhavenum}{$moneyname}]]></item>
+				<item id="log_open"><![CDATA[{$_G[username]}ªá¶O{$lognum}{$moneyname}¶}¤á]]></item>
+				<item id="loginpass"><![CDATA[µn¿ý±K½X]]></item>
+				<item id="money_num"><![CDATA[¾Þ§@ª÷ÃB]]></item>
+				<item id="money_numshow"><![CDATA[ª÷ÃB]]></item>
+				<item id="money_unit"><![CDATA[»È¦æ³f¹ô]]></item>
+				<item id="mybank_info"><![CDATA[½ã¤á«H®§]]></item>
+				<item id="mybank_opentime"><![CDATA[¶}¤á®É¶¡]]></item>
+				<item id="mybank_pass"><![CDATA[»È¦æ±K½X]]></item>
+				<item id="mybank_status"><![CDATA[½ã¤áª¬ºA]]></item>
+				<item id="mybank_status_yes"><![CDATA[¥¿±`¨Ï¥Î]]></item>
+				<item id="mybank_status_no"><![CDATA[¤w³Q­áµ²]]></item>
+				<item id="new_bankcreator"><![CDATA[·s³Ð©l¤H]]></item>
+				<item id="no_banklist"><![CDATA[ÁÙ¨S¦³»È¦æ«Ø¥ß¡C]]></item>
+				<item id="no_datalist"><![CDATA[ÁÙ¨S¦³¬ÛÃö¼Æ¾Ú¡C]]></item>
+				<item id="notice_title"><![CDATA[ª`·N¨Æ¶µ]]></item>
+				<item id="num"><![CDATA[¼Æ¶q]]></item>
+				<item id="off_changep"><![CDATA[§ó´«³Ð©l¤H]]></item>
+				<item id="off_delbank"><![CDATA[§R°£»È¦æ]]></item>
+				<item id="off_notice"><![CDATA[1¡B§R°£»È¦æ±Nª½±µ§R°£»È¦æªº¬ÛÃö¼Æ¾Ú¡A¨Ã¤£§@°h¿úµ¥³B²z¡C<br />2¡B§ó´«³Ð©l¤H¤£·|§ó·s»È¦æ³Ð©l®É¶¡¡C<br />3¡B¹ï¤_»È¦æ¹ê»Ú¸ê¥»¤p¤_0©ÎªÌ¤£¯à¤ä«ù»È¦æ·~°Èªº¥i¥Hªö¨ú¿Ä¸ê©ÎªÌ¯}²£³B²z¡C<br />4¡B¹ï¤_¯}²£ªº»È¦æ¬°¤F«O»ÙÀx¤áªº§Q¯q¡A¥i¥Hªö¨ú¦p¤U±¹¬I¡J<br />&nbsp;&nbsp;Æ¡±N³Ð©l¤H§ó§ï¬°¥ô¦ó¤@­ÓºÞ²z­û¡F<br />&nbsp;&nbsp;Æ¢­×§ï¬ÛÃö°Ñ¼Æ¡A¥h±¼»È¦æ¦æªø¡A¬°»È¦æ¿Ä¸ê¤ä«ù»È¦æµo®i¡F<br />&nbsp;&nbsp;Æ£µo¥¬¤½§i­­©w®É¶¡ÅýÀx¤áºÉ§Ö¨ú®ø¸Ó»È¦æªº¬ÛÃö·~°È¡F<br />&nbsp;&nbsp;Æ¤³Ì«á§R°£»È¦æ¡A§¹¦¨¯}²£¡C]]></item>
+				<item id="pas_changepass"><![CDATA[­×§ï»È¦æ±K½X]]></item>
+				<item id="pas_newpass"><![CDATA[·sªº±K½X]]></item>
+				<item id="pas_newpass2"><![CDATA[¦A¦¸½T»{]]></item>
+				<item id="pas_close"><![CDATA[®ø°£»È¦æ½ã¤á]]></item>
+				<item id="pas_notice"><![CDATA[1¡B¦pªG§Ñ°O»È¦æ±K½X½Ð§iª¾»È¦æ¦æªø³B²z¡C<br />2¡B®ø°£»È¦æ½ã¤á¥²¶·¦b¨S¦³©w´Á¦s´Ú©M¶U´Úªº±¡ªp¤U¤~¯à¶i¦æ¾Þ§@¡C<br />3¡B®ø¤á®É±N¤£µ¹¤©¤ä¥I¬¡´Á§Q®§¡A¬°¤FÁ×§K·l¥¢±z¥i¥H¥ý¤â°Êµ²®§¡C]]></item>
+				<item id="pm_acc_title"><![CDATA[[»È¦æ³qª¾]»È¦æ½ã¤áÅÜ°Ê³qª¾]]></item>
+				<item id="pm_accstatus_content"><![CDATA[±z¦b {$bankinfo[bankname]} ªº½ã¤áª¬ºA³Q½Õ¾ã¬°¡J{$chgstatus}¡A½Ð¨ì»È¦æ®Ö¹ê¡C]]></item>
+				<item id="pm_accpass_content"><![CDATA[±z¦b {$bankinfo[bankname]} ªº»È¦æ±K½X³Q­«¸m¬° {$newbankpass}¡A¬°¤F¦w¥þ©M¤è«K°_¨£½Ð¤Î®É¨ì»È¦æ­×§ï±K½X¡C]]></item>
+				<item id="pm_acctocur_content"><![CDATA[±z¦b {$bankinfo[bankname]} ªº {$banknum}{$moneyname} ©w´Á¦s´Ú³Q±j¦æÂà²¾¦Ü±zªº¬¡´Á½ã¤á¡A©w´Á»P¬¡´Áªº§Q®§§¡¨ü¨ì·l¥¢¡C¤Þ°_¸Ó¾Þ§@ªº¥i¯à­ì¦]¬O±z¤í¶U¨ì´Á¥¼ÁÙ¡A½Ð¨ì»È¦æ®Ö¹ê¡C]]></item>
+				<item id="pm_addbank_title"><![CDATA[[»È¦æ³qª¾]±zªº»È¦æ¤w¸g¶}³]¦¨¥\\]]></item>
+				<item id="pm_addbank_content"><![CDATA[®¥³ß±z¡A±zªº»È¦æ {$var_bankname} ¤w¸g¶}³]¦¨¥\\¡I±z¬°¦¹¤ä¥I¤F¶}³]¤âÄò¶O {$poundage}{$moneyname}¡A¦P®É¬°»È¦æªì©l¿Ä¸ê {$var_investment}{$moneyname}¡C¥Ñ¤_»È¦æ·í«e¬°Àq»{°Ñ¼Æ¡A©Ò¥H¼È®É¬OÃö³¬ª¬ºA¤£¯àÀç·~¡A½Ð¤Î®É¨ì»È¦æ¥h³]©w¦X²zªº¨t²Î°Ñ¼Æ¦P®É¶}±Ò»È¦æ§Y¥i¥¿±`Àç·~¡C½Ðª`·N¤¤¥¡»È¦æ¬°±z´£¨Ñªº«O©³§Q®§¤ñ²v¡A³o¼Ë¦³§Q¤_»È¦æªºµo®i¡C¯¬±zªº»È¦æªYªY¦Vºa¡I]]></item>
+				<item id="pm_chg_title"><![CDATA[[»È¦æ³qª¾]»È¦æ¶×´Ú®ø®§³qª¾]]></item>
+				<item id="pm_chg_content"><![CDATA[¥Î¤á {$_G[username]} ¶×´Ú {$_G[gp_banknum]}{$moneyname} ¨ì±z¦b {$bankinfo[bankname]} ªº½ã¤á¤W¡A½Ðª`·N¬d¦¬¡C¨ãÅé«H®§½Ð¨ì»È¦æ¬d¬Ý¡C]]></item>
+				<item id="pm_chgcreator_title"><![CDATA[[»È¦æ³qª¾]»È¦æ³Ð©l¤H§ó§ï³qª¾]]></item>
+				<item id="pm_chgcreator_content1"><![CDATA[»È¦æ¨t²Î¤w¸g±N {$bankinfo[bankname]} ªº³Ð©l¤H¥Ñ {$bankinfo[creator]} §ó§ï¬°±z¡A±z²{¦b¾Ö¦³¸Ó»È¦æªº©Ò¦³±±¨îÅv¡A»°§Ö¥h¥Î¤ß¸gÀç§a¡I]]></item>
+				<item id="pm_chgcreator_content2"><![CDATA[»È¦æ¨t²Î¤w¸g±N {$bankinfo[bankname]} ªº³Ð©l¤H¥Ñ±z§ó§ï¬° {$newcreator} ¡A±z¤£¦A¾Ö¦³¸Ó»È¦æªº±±¨îÅv¡A¯S¦¹³qª¾¡C]]></item>
+				<item id="pm_fin_title"><![CDATA[[»È¦æ³qª¾]»È¦æ§ë¸ê®ø®§³qª¾]]></item>
+				<item id="pm_fin_content"><![CDATA[¥Î¤á {$_G[username]} ¬°±z¶}³]ªº»È¦æ§ë¸ê¤F {$banknum}{$moneyname}¡A¨ãÅé«H®§½Ð¨ì»È¦æ¬d¬Ý¡C]]></item>
+				<item id="pm_fin_get_title"><![CDATA[[»È¦æ³qª¾]»È¦æ§ë¸ê´£¨ú³qª¾]]></item>
+				<item id="pm_fin_get_content"><![CDATA[¥Î¤á {$_G[username]} ±q {$bankinfo[bankname]} ¤¤´£¨ú¸êª÷ {$banknum}{$moneyname} ¨ì±zªº²{ª÷¤¤¡A½Ð¬d¦¬¡C]]></item>
+				<item id="pm_lencheck_title"><![CDATA[[»È¦æ³qª¾]¶U´Ú¼f§å³qª¾]]></item>
+				<item id="pm_lencheckno_content"><![CDATA[«Ü¿ò¾Ñªº³qª¾±z¡A±z¦b {$bankinfo[bankname]} ¥Ó½Ðªº {$banknum}{$moneyname} ¶U´Ú¨S¦³³q¹L¼f§å¡C]]></item>
+				<item id="pm_lencheckyes_content"><![CDATA[®¥³ß±z¡A±z¦b {$bankinfo[bankname]} ¥Ó½Ðªº {$banknum}{$moneyname} ¶U´Ú³q¹L¼f§å°Õ¡A¶U´Úª÷ÃB¤w¸g¹º¨ì±zªº²{ª÷¤¤¡A°O¦í¦­ÁÙ¶U´Ú¤Ö¥I§Q®§®@¡C]]></item>
+				<item id="pm_lenoff_title"><![CDATA[[»È¦æ³qª¾]¶U´Ú¤í´Ú³B²z³qª¾]]></item>
+				<item id="pm_lenoffok_content"><![CDATA[±z¦n¡A±z¦b {$bankinfo[bankname]} ªº {$banknum}{$moneyname} ¶U´Ú¨ì´Á¨S¦³ÂkÁÙ¡A»È¦æªö¨ú±j¦©ªº¤è¦¡¶i¦æ³B²z¡A±zÀ³¸Ó¤ä¥I¥»ª÷ {$banknum}{$moneyname}+§Q®§ {$lenaccnum}{$moneyname}¡A»È¦æ±q±zªº¬¡´Á½ã¤á¤¤¦©°£ {$getcur}{$moneyname}¡A²{ª÷¤¤¦©°£ {$getmom}{$moneyname} ¥Î¤_¤ä¥I¶U´Ú¡C²{¤w¦©´Ú¦¨¥\\¡AÁÂÁÂ¦X§@¡C]]></item>
+				<item id="pm_lenoffup_content"><![CDATA[¤¤¥¡¦æªø±z¦n¡A¥Î¤á {$buleninfo[username]} ¦b {$bankinfo[bankname]} ªº {$banknum}{$moneyname} ¶U´Ú¨ì´Á¨S¦³ÂkÁÙ¡A½Ð¨ó§U³B²z¬ÛÃö¨Æ©y¡CÁÂÁÂ¡C\n\n³B²z¦a§}¡J[url]{$boardurl}plugin.php?id=bank_ane:bank&bankid={$bankid}&mode=admin&action=lma&noid={$noid}[/url]]]></item>
+				<item id="pm_lenoffdo_content"><![CDATA[±z¦n¡A±z¦b {$bankinfo[bankname]} ªº¤@µ§¥»ª÷{$banknum}{$moneyname}+§Q®§{$lenaccnum}{$moneyname}ªº¶U´Ú¨ì´Á¥¼ÁÙ¡A²{¤¤¥¡»È¦æ¹ï±zªºÂX®i¿n¤À¶i¦æ¦p¤U½Õ¾ã¥Î¤_©è®ø¶U´Ú¡J{$cinfo}¡C¦³¶U¦³ÁÙ¡A¦A¶U¤£Ãø¡A±æ¸Û«H¦X§@¡CÁÂÁÂ¡C]]></item>
+				<item id="search_onlysys"><![CDATA[¶È¬d¸ßºÞ²z¾Þ§@]]></item>
+				<item id="search_minmoney"><![CDATA[¾Þ§@ª÷ÃB¤U­­]]></item>
+				<item id="select_bank"><![CDATA[½Ð¿ï¾Ü»È¦æ]]></item>
+				<item id="supadmin_menu_add"><![CDATA[²K¥[»È¦æ]]></item>
+				<item id="supadmin_menu_off"><![CDATA[¯}²£³B²z]]></item>
+				<item id="supadmin_menu_view"><![CDATA[¾Þ§@°O¿ý]]></item>
+				<item id="supbank_notice"><![CDATA[¤¤¥¡»È¦æ¤½§i«H®§]]></item>
+				<item id="supbank_admin"><![CDATA[¤¤¥¡»È¦æ¦æªø]]></item>
+				<item id="supbank_admininfo"><![CDATA[(ºÞ²z­ûÀq»{¬°¤¤¥¡»È¦æ¦æªø)]]></item>
+				<item id="system_currentacc"><![CDATA[¤¤¥¡»È¦æ¬¡´Á¦sÀx«O©³§Q®§§Q²v]]></item>
+				<item id="system_fixedacc"><![CDATA[¤¤¥¡»È¦æ©w´Á¦sÀx«O©³§Q®§§Q²v]]></item>
+				<item id="thousand_sign"><![CDATA[¡@]]></item>
+				<item id="timebegin"><![CDATA[¥Í®Ä®É¶¡]]></item>
+				<item id="timeend"><![CDATA[¨ì´Á®É¶¡]]></item>
+				<item id="touser"><![CDATA[¹ï¤è±b¸¹]]></item>
+				<item id="type"><![CDATA[Ãþ«¬]]></item>
+				<item id="upwards"><![CDATA[¥H¤W]]></item>
+				<item id="view_more"><![CDATA[¬d¬Ý¸Ô±¡]]></item>
+				<item id="upgradetodzx"><![CDATA[DZ X1.5¤É¯Å¡JANE]]></item>
+				<item id="end"><![CDATA[]]></item>
+				<item id="upgradetodzx2"><![CDATA[DZ X3.2¤É¯Å¡J<a href=http://bbs.wmzz.cn/ target=_blank>¤õ»R¨gÀs</a>]]></item>
+			</item>
+			<item id="installlang">
+				<item id="installalready"><![CDATA[±z¤w¸g¦w¸Ë¹LªÀ°Ï»È¦æ¡A½Ðªð¦^¡C]]></item>
+				<item id="addaddition"><![CDATA[½Ð°Ý±z¬O§_Ä@·N²K¥[¡§ªÀ°Ï»È¦æ¡¨¨ì±zªº¸ê·½¦Cªí¡H]]></item>
+				<item id="czw1"><![CDATA[ªÀ°Ï»È]]></item>
+				<item id="czw2"><![CDATA[ªÀ°Ï»È]]></item>
+				<item id="czw3"><![CDATA[ªÀ°Ï»È´¡¥ó]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>
