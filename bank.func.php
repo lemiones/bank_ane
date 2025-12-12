@@ -228,7 +228,7 @@ function hack_writeBanklog($bank, $num, $log, $issys = 0, $other = '') {
 
 	global $_G;
 
-	DB::query("INSERT INTO ".DB::table('plugin_banklog')." (uid,username,bankid,issystem,opnum,remark,otheruser,optime,opip) VALUES('$_G[uid]','$_G[username]','$bank','$issys','$num','$log','$other','$_G[timestamp]','$_G[clientip]')");
+        DB::query("INSERT INTO ".DB::table('plugin_banklog')." (uid,username,bankid,issystem,opnum,remark,otheruser,optime,opip) VALUES('{$_G['uid']}','{$_G['username']}','$bank','$issys','$num','$log','$other','{$_G['timestamp']}','{$_G['clientip']}')");
 
 }
 

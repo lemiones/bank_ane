@@ -92,7 +92,7 @@ if($bankid>0) {
 	include_once libfile('function/discuzcode');
 	$query = DB::query("SELECT * FROM ".DB::table('plugin_banklist')." WHERE id='$bankid'");
 	if($bankinfo = DB::fetch($query)) {
-		$bankinfo['opentimeshow'] = gmdate("{$_G[setting][dateformat]}", $bankinfo['opentime']+$_G['setting']['timeoffset']*3600);
+                $bankinfo['opentimeshow'] = gmdate("{$_G['setting']['dateformat']}", $bankinfo['opentime'] + $_G['setting']['timeoffset'] * 3600);
 		$bankinfo['allmoneynum'] = $bankinfo['bankroll']+$bankinfo['deposit'];
 		$bankinfo['noticeshow'] = discuzcode($bankinfo['notice'], 1, 0);
 		$bankinfo['currentrate'] = unserialize($bankinfo['currentrate']);
