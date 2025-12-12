@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
-	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
-	<item id="Time"><![CDATA[2015-02-07 16:15]]></item>
+<item id="Version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.5 Release 20250901]]></item>
+<item id="Time"><![CDATA[2025-09-01 00:00]]></item>
 	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -44,7 +44,7 @@
 				</item>
 			</item>
 		</item>
-		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2,X3.5 Release 20250901]]></item>
 		<item id="var">
 			<item id="0">
 				<item id="displayorder"><![CDATA[1]]></item>
@@ -441,7 +441,7 @@ extcredits8,0,0]]></item>
 				<item id="view_more"><![CDATA[查看詳情]]></item>
 				<item id="upgradetodzx"><![CDATA[DZ X1.5升級︰ANE]]></item>
 				<item id="end"><![CDATA[]]></item>
-				<item id="upgradetodzx2"><![CDATA[DZ X3.2升級︰<a href=http://bbs.wmzz.cn/ target=_blank>火舞狂龍</a>]]></item>
+<item id="upgradetodzx2"><![CDATA[DZ X3.5 適配︰<a href=http://bbs.wmzz.cn/ target=_blank>火舞狂龍</a>]]></item>
 			</item>
 			<item id="installlang">
 				<item id="installalready"><![CDATA[您已經安裝過社區銀行，請返回。]]></item>
