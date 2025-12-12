@@ -17,6 +17,7 @@ if(!defined('IN_BANKHACK')) {
 
 
 $action = trim($_G['gp_action']);
+$uid = $_G['uid'];
 
 $op = trim($_G['gp_op']);
 
@@ -136,7 +137,7 @@ if($action=='buy') {
 
 		}
 
-		DB::query("UPDATE ".DB::table('common_member_count')." SET $dosql WHERE uid='$_G[uid]'");
+                DB::query("UPDATE ".DB::table('common_member_count')." SET $dosql WHERE uid='$uid'");
 
 		$creditname = $extcredits[$buycreditsnum]['title'].'('.$docredit.')';
 
@@ -156,13 +157,13 @@ if($action=='buy') {
 
 
 
-	$datanum = DB::result_first("SELECT COUNT(*) FROM ".DB::table('plugin_banklog')." WHERE bankid='0' AND uid='$_G[uid]' AND issystem='0'");
+        $datanum = DB::result_first("SELECT COUNT(*) FROM ".DB::table('plugin_banklog')." WHERE bankid='0' AND uid='{$uid}' AND issystem='0'");
 
 	if($datanum>0) {
 
 		$multipage = multi($datanum, $pernum, $page, "plugin.php?id=bank_ane:bank&mode=other&action=buylog");
 
-		$query = DB::query("SELECT * FROM ".DB::table('plugin_banklog')." WHERE bankid='0' AND uid='$_G[uid]' AND issystem='0' ORDER BY id DESC LIMIT $start_limit, $pernum");
+                $query = DB::query("SELECT * FROM ".DB::table('plugin_banklog')." WHERE bankid='0' AND uid='{$uid}' AND issystem='0' ORDER BY id DESC LIMIT $start_limit, $pernum");
 
 		$rowcolor = 1;
 
@@ -172,7 +173,7 @@ if($action=='buy') {
 
 			$datashow['tr'] = $rowcolor++;
 
-			$datashow['optimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['optime'] + $_G['setting']['timeoffset'] * 3600);
+			$datashow['optimeshow'] = gmdate("{$_G['setting'][dateformat]} {$_G['setting'][timeformat]}", $datashow['optime'] + $_G['setting']['timeoffset'] * 3600);
 
 			$datalist[] = $datashow;
 
@@ -260,7 +261,7 @@ if($action=='buy') {
 
 	}
 
-	$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE uid='$_G[uid]' ORDER BY optype,bankid");
+        $query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE uid='{$uid}' ORDER BY optype,bankid");
 
 	$rowcolor = 1;
 
@@ -276,13 +277,13 @@ if($action=='buy') {
 
 		$datashow['bankname'] = $banklist[$datashow['bankid']];
 
-		$datashow['begintimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
+		$datashow['begintimeshow'] = gmdate("{$_G['setting'][dateformat]} {$_G['setting'][timeformat]}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
 
 		if($datashow['optype']==2 && $datashow['opstatus']==0) {
 
 		} else {
 
-			$datashow['endtimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
+			$datashow['endtimeshow'] = gmdate("{$_G['setting'][dateformat]} {$_G['setting'][timeformat]}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
 
 		}
 

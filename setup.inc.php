@@ -35,8 +35,8 @@ if($action=='add') {
 		showmessage($bankmsglang['creatormoney_error']);
 	}
 	$tempcurrate = serialize(array(0 => $hackVars['currentaccrual']));
-	DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits-$var_investment-$poundage WHERE uid='$_G[uid]'");
-	DB::query("INSERT INTO ".DB::table('plugin_banklist')." (bankname,banklogo,creator,opentime,bankstatus,bankadmin,investment,bankroll,deposit,usernum,notice,opencost,currentrate,fixedrate,lendingrate,changetax) VALUES('$var_bankname','','$var_creator','$_G[timestamp]','1','','$var_investment','$var_investment','0','0','$banktmplang[bank_info_msg]','0','$tempcurrate','$hackVars[fixedaccrual]','$hackVars[fixedaccrual]','0')");
+        DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits-$var_investment-$poundage WHERE uid='{$_G['uid']}'");
+        DB::query("INSERT INTO ".DB::table('plugin_banklist')." (bankname,banklogo,creator,opentime,bankstatus,bankadmin,investment,bankroll,deposit,usernum,notice,opencost,currentrate,fixedrate,lendingrate,changetax) VALUES('$var_bankname','','$var_creator','{$_G['timestamp']}','1','','$var_investment','$var_investment','0','0','{$banktmplang['bank_info_msg']}','0','$tempcurrate','{$hackVars['fixedaccrual']}','{$hackVars['fixedaccrual']}','0')");
 	$pmtitle = $banktmplang['pm_addbank_title'];
 	eval("\$pmcontent = \"".$banktmplang['pm_addbank_content']."\";");
 	notification_add($_G['uid'], 'system', 'system_notice', array('subject' => $pmtitle, 'message' => $pmcontent), 1);
@@ -75,7 +75,7 @@ if($action=='add') {
 	eval("\$pmcontent = \"".$banktmplang['pm_chgcreator_content1']."\";");
 	notification_add($newcreatorinfo['uid'], 'system', 'system_notice', array('subject' => $pmtitle, 'message' => $pmcontent), 1);
 	//sendpm($newcreatorinfo['uid'], $pmtitle, $pmcontent);
-	$query = DB::query("SELECT uid FROM ".DB::table('common_member')." WHERE username='$bankinfo[creator]'");
+        $query = DB::query("SELECT uid FROM ".DB::table('common_member')." WHERE username='{$bankinfo['creator']}'");
 	if($creatorinfo = DB::fetch($query)) {
 		eval("\$pmcontent = \"".$banktmplang['pm_chgcreator_content2']."\";");
 		notification_add($creatorinfo['uid'], 'system', 'system_notice', array('subject' => $pmtitle, 'message' => $pmcontent), 1);
@@ -133,7 +133,7 @@ if($action=='add') {
 		$datalist = array();
 		while($datashow = DB::fetch($query)) {
 			$datashow['tr'] = $rowcolor++;
-			$datashow['optimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['optime'] + $_G['setting']['timeoffset'] * 3600);
+			$datashow['optimeshow'] = gmdate("{$_G['setting'][dateformat]} {$_G['setting'][timeformat]}", $datashow['optime'] + $_G['setting']['timeoffset'] * 3600);
 			if($bsearchkey!='') $datashow['remark'] = str_replace("$bsearchkey", "<span style=\"font-weight:bold;color:red\">$bsearchkey</span>", $datashow['remark']);
 			$datalist[] = $datashow;
 		}

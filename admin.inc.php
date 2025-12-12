@@ -11,6 +11,8 @@ $op = trim($_G['gp_op']);
 $loginpass = $_G['gp_loginpass'];
 $var_bankname = trim($_G['gp_var_bankname']);
 $var_banklogo = trim($_G['gp_var_banklogo']);
+$timestamp = $_G['timestamp'];
+$uid = $_G['uid'];
 
 loaducenter();
 if($action=='dovar') {
@@ -90,18 +92,19 @@ if($action=='dovar') {
 		while($datashow = DB::fetch($query)) {
 			$datashow['tr'] = $rowcolor++;
 			$datashow['status'] = ($datashow['opstatus']==1) ? $banktmplang['mybank_status_no'] : $banktmplang['mybank_status_yes'];
-			$datashow['opentimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
+			$datashow['opentimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
 			$datalist[] = $datashow;
 		}
 	}
 
 } elseif($action=='showacc') {
 
-	$buser = trim($_G['gp_buser']);
-	if($buser=='') {
-		showmessage($bankmsglang['user_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
-	}
-	$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND username='$buser' ORDER BY optype");
+        $buser = trim($_G['gp_buser']);
+        $buseresc = daddslashes($buser);
+        if($buser=='') {
+                showmessage($bankmsglang['user_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
+        }
+        $query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND username='{$buseresc}' ORDER BY optype");
 	$buserstatus = 0;
 	$isdelaylen = 0;
 	$rowcolor = 1;
@@ -110,10 +113,10 @@ if($action=='dovar') {
 	$buerleninfo = array();
 	while($datashow = DB::fetch($query)) {
 		$datashow['tr'] = $rowcolor++;
-		$datashow['begintimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
+		$datashow['begintimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
 		if($datashow['optype']==2 && $datashow['opstatus']==0) {
 		} else {
-			$datashow['endtimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
+			$datashow['endtimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
 		}
 		if($datashow['optype']==0) {
 			$buserstatus = ($datashow['opstatus']==1) ? 2 : 1;
@@ -135,16 +138,17 @@ if($action=='dovar') {
 
 } elseif($action=='douser') {
 
-	$buser = trim($_G['gp_buser']);
-	if($buser=='') {
-		showmessage($bankmsglang['user_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
-	}
-	$query = DB::query("SELECT uid,opstatus,extchar FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND username='$buser' AND optype='0'");
+        $buser = trim($_G['gp_buser']);
+        $buseresc = daddslashes($buser);
+        if($buser=='') {
+                showmessage($bankmsglang['user_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
+        }
+        $query = DB::query("SELECT uid,opstatus,extchar FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND username='{$buseresc}' AND optype='0'");
 	if(!$buserinfo = DB::fetch($query)) {
 		showmessage($bankmsglang['user_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
 	}
-	if($op=='cgs') {
-		$s = (abs(intval(trim($_G['gp_s'])))==1) ? 1 : 0;//i am not sure if here should like this
+        if($op=='cgs') {
+                $s = abs(intval(trim($_G['gp_s']))) === 1 ? 1 : 0;
 		if($s==1) {
 			$chgstatus = $banktmplang['mybank_status_no'];
 			$moresql = '';
@@ -152,7 +156,7 @@ if($action=='dovar') {
 			$chgstatus = $banktmplang['mybank_status_yes'];
 			$moresql = ",begintime='$timestamp'";
 		}
-		DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opstatus='$s'{$moresql} WHERE bankid='$bankid' AND uid='$buserinfo[uid]' AND optype='0'");
+                DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opstatus='$s'{$moresql} WHERE bankid='$bankid' AND uid='{$buserinfo['uid']}' AND optype='0'");
 		$pmtitle = $banktmplang['pm_acc_title'];
 		eval("\$pmcontent = \"".$banktmplang['pm_accstatus_content']."\";");
 		sendpm($buserinfo['uid'], $pmtitle, $pmcontent);
@@ -162,7 +166,7 @@ if($action=='dovar') {
 	} elseif($op=='cgp') {
 		$newbankpass = random(6);
 		$md5newpass = md5($newbankpass);
-		DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET extchar='$md5newpass' WHERE bankid='$bankid' AND uid='$buserinfo[uid]' AND optype='0'");
+                DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET extchar='$md5newpass' WHERE bankid='$bankid' AND uid='{$buserinfo['uid']}' AND optype='0'");
 		$pmtitle = $banktmplang['pm_acc_title'];
 		eval("\$pmcontent = \"".$banktmplang['pm_accpass_content']."\";");
 		//echo $buserinfo['uid'];exit;
@@ -173,16 +177,16 @@ if($action=='dovar') {
 		showmessage($bankmsglang['action_success'], "plugin.php?id=bank_ane:bank&mode=admin&bankid=$bankid&action=showacc&buser=$buser");
 	} else {
 		$noid = abs(intval(trim($_G['gp_noid'])));
-		$query = DB::query("SELECT opnum FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND uid='$buserinfo[uid]' AND optype='2' AND opstatus='1' AND endtime<'{$_G[timestamp]}'");
+                $query = DB::query("SELECT opnum FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND uid='{$buserinfo['uid']}' AND optype='2' AND opstatus='1' AND endtime<'{$timestamp}'");
 		if(!$buleninfo = DB::fetch($query)) {
 			showmessage($bankmsglang['var_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
 		}
-		$query = DB::query("SELECT opnum FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid' AND bankid='$bankid' AND uid='$buserinfo[uid]' AND optype='1'");
+                $query = DB::query("SELECT opnum FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid' AND bankid='$bankid' AND uid='{$buserinfo['uid']}' AND optype='1'");
 		if(!$bufixinfo = DB::fetch($query)) {
 			showmessage($bankmsglang['var_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=acc", array(), array('alert'=>'error'));
 		}
 		$banknum = $bufixinfo['opnum'];
-		DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opnum=opnum+$banknum,begintime='{$_G[timestamp]}' WHERE bankid='$bankid' AND uid='$buserinfo[uid]' AND optype='0'");
+                DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opnum=opnum+$banknum,begintime='{$timestamp}' WHERE bankid='$bankid' AND uid='{$buserinfo['uid']}' AND optype='0'");
 		DB::query("DELETE FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid'");
 		hack_updateDeposit($buserinfo['uid']);
 		$pmtitle = $banktmplang['pm_acc_title'];
@@ -209,8 +213,8 @@ if($action=='dovar') {
 			}
 			$getendtime = $_G['timestamp']+$buleninfo['endtime']*86400;
 			DB::query("UPDATE ".DB::table('plugin_banklist')." SET bankroll=bankroll-$banknum WHERE id='$bankid'");
-			DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opstatus='1',begintime='{$_G[timestamp]}',endtime='$getendtime' WHERE id='$noid'");
-			DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits+$banknum WHERE uid='$buleninfo[uid]'");
+			DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opstatus='1',begintime='{$timestamp}',endtime='$getendtime' WHERE id='$noid'");
+			DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits+$banknum WHERE uid='{$buleninfo['uid']}'");
 			$pmtitle = $banktmplang['pm_lencheck_title'];
 			eval("\$pmcontent = \"".$banktmplang['pm_lencheckyes_content']."\";");
 			sendpm($buleninfo['uid'], $pmtitle, $pmcontent);
@@ -237,7 +241,7 @@ if($action=='dovar') {
 			while($datashow = DB::fetch($query)) {
 				$datashow['tr'] = $rowcolor++;
 				$datashow['rate'] = $datashow['extchar']*1000;
-				$datashow['begintimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
+				$datashow['begintimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
 				$datalist[] = $datashow;
 			}
 		}
@@ -247,7 +251,7 @@ if($action=='dovar') {
 
 	if($op!='') {
 		$noid = abs(intval(trim($_G['gp_noid'])));
-		$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid' AND bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$_G[timestamp]}'");
+		$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid' AND bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$timestamp}'");
 		if(!$buleninfo = DB::fetch($query)) {
 			showmessage($bankmsglang['var_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=lof", array(), array('alert'=>'error'));
 		}
@@ -269,12 +273,12 @@ if($action=='dovar') {
 			if($bucurinfo['opnum']>=$banknum+$lenaccnum) {
 				$getcur = $banknum+$lenaccnum;
 				$getmom = 0;
-				DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opnum=opnum-$getcur,begintime='{$_G[timestamp]}' WHERE bankid='$bankid' AND uid='$buserid' AND optype='0'");
+				DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opnum=opnum-$getcur,begintime='{$timestamp}' WHERE bankid='$bankid' AND uid='$buserid' AND optype='0'");
 				DB::query("UPDATE ".DB::table('plugin_banklist')." SET bankroll=bankroll+$getcur,deposit=deposit-$getcur WHERE id='$bankid'");
 			} else {
 				$getcur = $bucurinfo['opnum'];
 				$getmom = $banknum+$lenaccnum-$getcur;
-				DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opnum='0',begintime='{$_G[timestamp]}' WHERE bankid='$bankid' AND uid='$buserid' AND optype='0'");
+				DB::query("UPDATE ".DB::table('plugin_bankoperation')." SET opnum='0',begintime='{$timestamp}' WHERE bankid='$bankid' AND uid='$buserid' AND optype='0'");
 				DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits-$getmom WHERE uid='$buserid'");
 				DB::query("UPDATE ".DB::table('plugin_banklist')." SET bankroll=bankroll+$banknum+$lenaccnum,deposit=deposit-$getcur WHERE id='$bankid'");
 			}
@@ -322,17 +326,17 @@ if($action=='dovar') {
 		}
 	} else {
 
-		$datanum = DB::result_first("SELECT COUNT(*) FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$_G[timestamp]}'");
+		$datanum = DB::result_first("SELECT COUNT(*) FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$timestamp}'");
 		if($datanum>0) {
 			$multipage = multi($datanum, $pernum, $page, "plugin.php?id=bank_ane:bank&mode=admin&bankid=$bankid&action=lof");
-			$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$_G[timestamp]}' ORDER BY id LIMIT $start_limit, $pernum");
+			$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$timestamp}' ORDER BY id LIMIT $start_limit, $pernum");
 			$rowcolor = 1;
 			$datalist = array();
 			while($datashow = DB::fetch($query)) {
 				$datashow['tr'] = $rowcolor++;
 				$datashow['rate'] = $datashow['extchar']*1000;
-				$datashow['begintimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
-				$datashow['endtimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
+				$datashow['begintimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['begintime'] + $_G['setting']['timeoffset'] * 3600);
+				$datashow['endtimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['endtime'] + $_G['setting']['timeoffset'] * 3600);
 				$datashow['accrual'] = hack_accrualLen($datashow['opnum'], $datashow['extchar'], $datashow['begintime'], $datashow['endtime']);
 				$datalist[] = $datashow;
 			}
@@ -345,7 +349,7 @@ if($action=='dovar') {
 		showmessage('undefined_action', "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=lof", array(), array('alert'=>'error'));
 	}
 	$noid = abs(intval(trim($_G['gp_noid'])));
-	$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid' AND bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$_G[timestamp]}'");
+	$query = DB::query("SELECT * FROM ".DB::table('plugin_bankoperation')." WHERE id='$noid' AND bankid='$bankid' AND optype='2' AND opstatus='1' AND endtime<'{$timestamp}'");
 	if(!$buleninfo = DB::fetch($query)) {
 		showmessage($bankmsglang['var_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=lof", array(), array('alert'=>'error'));
 	}
@@ -397,8 +401,8 @@ if($action=='dovar') {
 		showmessage($bankmsglang['action_success'], "plugin.php?id=bank_ane:bank&mode=admin&bankid=$bankid&action=lof");
 	} else {
 		$buleninfo['rate'] = $buleninfo['extchar']*1000;
-		$buleninfo['begintimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $buleninfo['begintime'] + $_G['setting']['timeoffset'] * 3600);
-		$buleninfo['endtimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $buleninfo['endtime'] + $_G['setting']['timeoffset'] * 3600);
+		$buleninfo['begintimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $buleninfo['begintime'] + $_G['setting']['timeoffset'] * 3600);
+		$buleninfo['endtimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $buleninfo['endtime'] + $_G['setting']['timeoffset'] * 3600);
 		$creditsshow = '';
 		for($i=1; $i<=8; $i++) {
 			if(isset($extcredits[$i])) {
@@ -421,12 +425,12 @@ if($action=='dovar') {
 	if($mycash<$banknum) {
 		showmessage($bankmsglang['moneynum_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=fin", array(), array('alert'=>'error'));
 	}
-	DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits-$banknum WHERE uid='$_G[uid]'");
+	DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits-$banknum WHERE uid='{$uid}'");
 	DB::query("UPDATE ".DB::table('plugin_banklist')." SET investment=investment+$banknum,bankroll=bankroll+$banknum WHERE id='$bankid'");
 	eval("\$logmsg = \"".$banktmplang['log_fin']."\";");
 	hack_writeBanklog($bankid, $banknum, $logmsg, 1);
 	if($discuz_user!=$bankinfo['creator']) {
-		$query = DB::query("SELECT uid FROM ".DB::table('common_member')." WHERE username='$bankinfo[creator]'");
+		$query = DB::query("SELECT uid FROM ".DB::table('common_member')." WHERE username='{$bankinfo['creator']}'");
 		if($creatorinfo = DB::fetch($query)) {
 			$pmtitle = $banktmplang['pm_fin_title'];
 			eval("\$pmcontent = \"".$banktmplang['pm_fin_content']."\";");
@@ -457,7 +461,7 @@ if($action=='dovar') {
 		showmessage($bankmsglang['user_error'], "plugin.php?id=bank_ane:bank&bankid=$bankid&mode=admin&action=fin", array(), array('alert'=>'error'));
 	}
 	DB::query("UPDATE ".DB::table('plugin_banklist')." SET bankroll=bankroll-$banknum WHERE id='$bankid'");
-	DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits+$banknum WHERE uid='$touserinfo[uid]'");
+	DB::query("UPDATE ".DB::table('common_member_count')." SET $moneycredits=$moneycredits+$banknum WHERE uid='{$touserinfo['uid']}'");
 	eval("\$logmsg = \"".$banktmplang['log_fin_get']."\";");
 	hack_writeBanklog($bankid, $banknum, $logmsg, 1, $touser);
 	if($discuz_user!=$touser) {
@@ -484,7 +488,7 @@ if($action=='dovar') {
 		$datalist = array();
 		while($datashow = DB::fetch($query)) {
 			$datashow['tr'] = $rowcolor++;
-			$datashow['optimeshow'] = gmdate("{$_G[setting][dateformat]} {$_G[setting][timeformat]}", $datashow['optime'] + $_G['setting']['timeoffset'] * 3600);
+			$datashow['optimeshow'] = gmdate("{$_G['setting']['dateformat']} {$_G['setting']['timeformat']}", $datashow['optime'] + $_G['setting']['timeoffset'] * 3600);
 			if($bsearchkey!='') $datashow['remark'] = str_replace("$bsearchkey", "<span style=\"font-weight:bold;color:red\">$bsearchkey</span>", $datashow['remark']);
 			$datalist[] = $datashow;
 		}
